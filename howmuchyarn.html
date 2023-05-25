@@ -33,34 +33,65 @@
 
     <main>
       <div class="wrapper">
-        <h1>How Much Yarn?</h1>
+        <h1>How Much Yarn? - The Yarn Gift Helper</h1>
         <p>
           Welcome to YarnHelp! This is a site for knitters and crocheters of all
           levels who want yarn math help, as well as their friends and family
           that just want to know "how much yarn" to give them as a gift.
         </p>
+        <p>
+          Are you a non-knitter or non-crocheter who would like to gift yarn to
+          a knitter or crocheter in your life, but have no idea how much to get?
+          With over 240,000 different yarns in the world*, many different
+          thicknesses ("weights"), and yarn brands having different lengths of
+          yarn in each ball/skein, it definately can be confusing.
+        </p>
+        <p>
+          The Yarn Gift Helper is designed to help non-knitters quickly figure
+          out how much yarn to buy for their family members and friends who are
+          knitters - without spending hours learning about yarn. This current
+          edition is just for pullover sweaters/jumpers made with medium
+          thickness yarn.
+        </p>
 
         <form action="" class="how-much-yarn">
+            
+        <div class="form-section">
           <fieldset>
             <legend>Choose a Yarn Weight (thickness)</legend>
-
-            <input type="radio" name="weight" id="lace-01" checked />
-            <label for="lace-01" class="">01 Lace</label>
-
-            <input type="radio" name="weight" id="fingering-02" checked />
-            <label for="fingering-02" class="">02 Fingering</label>
-
-            <input type="radio" name="weight" id="sport-03" checked />
-            <label for="sport-03" class="">03 Sport</label>
-
-            <input type="radio" name="weight" id="dk-04" checked />
-            <label for="dk-04" class="">04 DK</label>
-
-            <input type="radio" name="weight" id="worsted-05" checked />
-            <label for="worsted-05" class="">05 Worsted</label>
-
-            <input type="radio" name="weight" id="chunky-06" checked />
-            <label for="chunky-06" class="">06 Chunky</label>
+            <div>
+              <div>
+                <input type="radio" name="weight" id="lace-01" checked />
+                <label for="lace-01" class="">01 Lace</label>
+              </div>
+              <input type="radio" name="weight" id="fingering-02" checked />
+              <label for="fingering-02" class="">02 Fingering</label>
+              <div>
+                <input type="radio" name="weight" id="sport-03" checked />
+                <label for="sport-03" class="">03 Sport</label>
+              </div>
+              <input type="radio" name="weight" id="dk-04" checked />
+              <label for="dk-04" class="">04 DK</label>
+              <div>
+                <input type="radio" name="weight" id="worsted-05" checked />
+                <label for="worsted-05" class="">05 Worsted</label>
+              </div>
+              <div>
+                <input type="radio" name="weight" id="chunky-06" checked />
+                <label for="chunky-06" class="">06 Chunky</label>
+              </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <label for="input"
+              >Yards in Each Ball:
+              <input type="number" placeholder="100" id="yards-per-ball"
+            /></label>
+  
+            <button type="submit" id="btn-calculate" class="btn-calculate btn">
+              Calculate
+            </button>
+          </div>
           </fieldset>
         </form>
 
