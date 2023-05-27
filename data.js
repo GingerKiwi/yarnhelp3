@@ -54,4 +54,3 @@ const pulloverData = {
         adultXxlPullover: 0,
         },
 }
-
