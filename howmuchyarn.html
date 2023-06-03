@@ -55,43 +55,43 @@
         </p>
 
         <form action="#" class="how-much-yarn">
-            
+
         <div class="form-section">
           <fieldset>
             <legend>Choose a Yarn Weight (thickness)</legend>
             <div>
-              <!-- <div>
-                <input type="radio" name="weight" id="lace-01" checked />
-                <label for="lace-01" class="">01 Lace</label>
-              </div> -->
               <div>
-                <input type="radio" name="weight" id="fingering-02" checked />
+                <input type="radio" name="weight" id="lace-01" value="lace01" />
+                <label for="lace-01" class="">01 Lace</label>
+              </div>
+              <div>
+                <input type="radio" name="weight" id="fingering-02" checked value="fingering01"/>
                 <label for="fingering-02" class="">02 Fingering</label>
               </div>
-              <!-- <div>
-                <input type="radio" name="weight" id="sport-03" checked />
+              <div>
+                <input type="radio" name="weight" id="sport-03" value="sport03" />
                 <label for="sport-03" class="">03 Sport</label>
-              </div> -->
-              <!-- <div>
-                <input type="radio" name="weight" id="dk-04" checked />
+              </div>
+              <div>
+                <input type="radio" name="weight" id="dk-04" value="dk04" />
                 <label for="dk-04" class="">04 DK</label>
-              </div> -->
+              </div>
                 <div>
-                <input type="radio" name="weight" id="worsted-05" checked />
+                <input type="radio" name="weight" id="worsted-05" value="worsted04"/>
                 <label for="worsted-05" class="">05 Worsted</label>
               </div>
-              <!-- <div>
-                <input type="radio" name="weight" id="chunky-06" checked />
+              <div>
+                <input type="radio" name="weight" id="chunky-06" value="chunky06"/>
                 <label for="chunky-06" class="">06 Chunky</label>
-              </div> -->
+              </div>
             </div>
         </div>
         <div class="form-section">
             <label for="input"
               >Yards in Each Ball:
-              <input type="number" placeholder="100" id="yards-per-ball"
-            /></label>
-  
+              <input type="number" placeholder="100" name="yardsPerBall" id="yards-per-ball" min="10" max="120000" step="1" value="10" />
+            </label>
+
             <button type="submit" id="btn-calculate" class="btn-calculate btn">
               Calculate
             </button>
@@ -102,18 +102,20 @@
         <h2>Project Types</h2>
         <div class="auto-grid">
           <div class="card">
-            <h3 class="card__title">Sweaters/Jumpers</h3>
-            <p>
-              Voluptatem excepturi tempore quo recusandae sunt ullam earum optio
-              cum?
-            </p>
+            <h3 class="card__title">Sweaters/<wbr/>Jumpers</h3>
+            <p>You will need <span class="babyPullover">__</span> balls of yarn for a baby pullover sweater.</p>
           </div>
           <div class="card">
             <h3 class="card__title">Scarfs</h3>
-            <p>
-              Voluptatem excepturi tempore quo recusandae sunt ullam earum optio
-              cum?
-            </p>
+            <p>You will need <span class="childScarf">__</span> balls of yarn for a child's scarf.</p>
+
+            <p>You will need <span class="adultSmallScarf">__</span> balls of yarn for a adult's small scarf.</p>
+
+            <p>You will need <span class="adultLargeScarf">__</span> balls of yarn for a adult's large scarf.</p>
+
+            <p>You will need <span class="adultExtraLongScarf">__</span> balls of yarn for a adult's extra large scarf.</p>
+
+            <p>You will need <span class="doctorWhoScarf">__</span> balls of yarn for a Doctor Who scarf.</p>
           </div>
           <div class="card">
             <h3 class="card__title">Blankets and Throws</h3>
@@ -143,5 +145,6 @@
       </div>
     </main>
     <script src="/app.js"></script>
+    <script src="/howmuchyarn.js" type="module"></script>
   </body>
 </html>
