@@ -1,4 +1,10 @@
 /**
+ * Note: yarn "weight" refers to the thickness of yarn, (not how many pounds or grams it weighs). 
+ * There are standard weights of yarn
+ * A pdf from the Craft Yarn Council on "Yarn Standards" will be added to the repo soon.
+ */ 
+
+/**
  * @typedef {Object} YarnWeight
  *
  * @property {string} name The name of the yarn weight.
@@ -8,12 +14,12 @@
 
 /**
  * @typedef {Object} ProjectType
- * @property {YarnWeight} lace00 projects for a weight of Lace 00.
- * @property {YarnWeight} fingering01 projects for a weight of Fingering 01.
- * @property {YarnWeight} sport02 projects for a weight of Sport 02.
- * @property {YarnWeight} dk03 projects for a weight of DK 03.
- * @property {YarnWeight} worsted04 projects for a weight of Worsted 04.
- * @property {YarnWeight} chunky05 projects for a weight of Chunky 05.
+ * @property {YarnWeight} lace00 projects with Lace 00 weight yarn.
+ * @property {YarnWeight} fingering01 projects with Fingering 01 weight yarn.
+ * @property {YarnWeight} sport02 projects with Sport 02 weight yarn.
+ * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
+ * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
+ * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
  */
 
 /** @type {ProjectType} */
