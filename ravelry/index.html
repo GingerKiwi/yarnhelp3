@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-	<link rel="stylesheet" href="./ravely-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./ravely-styles.css" />
+  </head>
+  <body>
     <main>
-        <h1>Ravelry Yarn List</h1>
-        <fieldset>
-            <legend>My legend</legend>
-            <!-- <input type="text"> -->
-            <button class="btn-ravely-search" id="btn-ravelry-search">List Yarns</button>
-        </fieldset>
+      <h1>Ravelry Yarn List</h1>
+      <p>
+        Note: currently (June 04, 2023) the page is not functional because the
+        api credentials have been removed. Proper api security will be
+        implemented soon. The site is being deployed as is because there are
+        updates to the css on all pages, as well as to share the code with other
+        devs. (Isn't open source awesome!)
+      </p>
+      <fieldset>
+        <legend>My legend</legend>
+        <!-- <input type="text"> -->
+        <button class="btn-ravely-search" id="btn-ravelry-search">
+          List Yarns
+        </button>
+      </fieldset>
 
-		<section id="yarn-list">
-			<!-- Yarn list will be inserted here. -->
-		</section>
+      <section id="yarn-list">
+        <!-- Yarn list will be inserted here. -->
+      </section>
     </main>
 
-	<script src="./ravelry.js" type="module"></script>
-</body>
+    <script src="./ravelry.js" type="module"></script>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 async function fetchFromRavelryApi(endpoint) {
-	// Please don't steal my credentials
-	const username = 'read-1935949be870bcd3ed3990f79db4966b';
-	const password = '8xRH2yN99fQkGVjzdhUvhvUubWxwFyp6sBeNZXM8';
+	// Credentials not included in repo. You'll need to create your own account and get your own credentials.
+	const username = 'username';
+	const password = 'password';
 
 	const baseUrl = 'https://api.ravelry.com';
 	const url = new URL(endpoint, baseUrl);
