@@ -73,8 +73,11 @@ margin-inline: auto;
 .card {
 padding: 1rem;
 background-color: var(--clr-card-bg);
+/* CSS - love how this works when border is on top of border-block-start, but breaks when it's below! */
+border: 1px solid var(--clr-card-top);
 border-block-start: 0.5rem solid var(--clr-card-top); /* make this the same as headings */
 border-radius: 0.5rem;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .card > * {
