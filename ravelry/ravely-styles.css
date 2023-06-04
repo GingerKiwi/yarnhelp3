@@ -1,0 +1,117 @@
+:root {
+    --ff-sans-01: 'PT Sans', sans-serif;
+    --ff-serif-01: serif;
+
+    --fw-500: 400;
+    --fw-700: 700;
+
+    --clr-black-erie: hsl(0, 0%, 11%); /* #1B1B1B */
+    --clr-blue-space: #091733;
+    --clr-tan-light:  hsl(31, 51%, 82%); /*#e9d3bb;*/
+    --clr-tan-extralight: hsl(31, 51%, 94%);
+    --clr-rose-dark: #a06266;
+    --clr-rose-light: #B7767A;
+    /* #C2999C */
+}
+
+body {
+    background-color: var(--clr-black-erie);
+    color: var(--clr-tan-light);
+    font-family: var(--ff-sans-01);
+    line-height: 1.75rem;
+}
+
+nav {
+    margin-bottom: 1.25rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    border-bottom: .75rem solid var(--clr-rose-dark);
+    padding: 1rem 0 0 1rem;
+}
+
+hr {
+    color: var(--clr-rose-dark);
+    margin: 1.5rem 0;
+}
+
+h2 {
+    color: var(--clr-rose-light);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+#blog-list {
+    padding: 1.75rem;
+
+}
+
+.post-body {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+/* UTILITY CLASSES */
+
+.clr-black-erie {
+    color: var(--clr-black-erie);
+}
+
+/* FORM */
+
+form {
+    background-color: var(--clr-tan-light);
+    color: var(--clr-black-erie);
+    padding: 2rem;
+    font-family: var(--ff-sans-01);
+    display: grid;
+    grid-gap: 1rem;
+    /* border: 2px solid red; */
+
+}
+
+label {
+    font-weight: var(--fw-700);
+    padding-right: 1rem;
+}
+
+.form-input-area {
+    border-radius: 5px;
+    box-shadow: none;
+    border: solid 2px var(--clr-rose-dark);
+    background-color: var(--clr-tan-extralight);
+    min-width: 95%;
+}
+
+.form-item {
+    /* border: 2px solid blue; */
+}
+
+button {
+    background-color: var(--clr-black-erie);
+    border-radius: 5px;
+    color: var(--clr-tan-light);
+    border: none;
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    font-weight: var(--fw-700);
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+button:hover,
+button:focus {
+   background: var(--clr-blue-space);
+}
+
+button:focus {
+   outline: 3px solid var(--clr-rose-dark);
+   outline-offset: 2px;
+}
+
+button:active {
+   transform: scale(0.97);
+}
