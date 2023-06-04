@@ -8,6 +8,10 @@
     --clr-test-red: red;
     --clr-test-lime: hsl(104, 76%, 47%);
     --clr-test-yellow: yellow;
+    --snow: #EFEDEE;
+    --wheat: #9a5815;
+    --forest: #272E22;
+    --charcoal: #211C16;
 }
 
 /* ------------------ */
@@ -67,7 +71,7 @@ margin-inline: auto;
 .card {
 padding: 1rem;
 background-color: var(--clr-card-bg);
-border-block-start: 0.5rem solid;
+border-block-start: 0.5rem solid; /* make this the same as headings */
 border-radius: 0.5rem;
 }
 
@@ -100,6 +104,7 @@ margin-bottom: 0.75rem;
 /* --- COLOUR THEME PICKER ---  */
 /* ---------------------------- */
 
+/* --- Functionality --- */
 .visually-hidden {
 clip: rect(0 0 0 0);
 clip-path: inset(50%);
@@ -149,9 +154,15 @@ background-color: var(--radio-color);
 .color-picker input[type="radio"]#dark {
 --radio-color: #232323;
 }
+
+.color-picker input[type="radio"]#elegant {
+    --radio-color: #9a5815;
+    }
 /* .color-picker input[type="radio"]#test {
     --radio-color: #4e1a4b;
 } */
+
+/* -- Individual Themes -- */
 
 .pink {
 --clr-body-bg: hsl(310 50% 90%);
@@ -180,6 +191,20 @@ background-color: var(--radio-color);
 --clr-card-bg: hsl(209 50% 5%);
 --clr-text: hsl(209 50% 90%);
 --clr-heading: hsl(209 50% 80%);
+}
+
+/* Note: Elegant theme is from: https://github.com/aylinmarie/elegant-knit She's a wonderful UI Engineer and fibre artist!
+    --snow: #EFEDEE; - body-bg - grey
+    --wheat: #9a5815; - heading
+    --forest: #272E22; - not used
+    --charcoal: #211C16; - text
+    --white: #FFFFFF; - card-bg
+*/
+.elegant {
+    --clr-card-bg: hsl(0, 0%, 100%);
+    --clr-body-bg: hsl(0, 0%, 94%);
+    --clr-text: hsl(95, 15%, 16%);
+    --clr-heading: hsl(30, 76%, 34%);
 }
 
 .test {
