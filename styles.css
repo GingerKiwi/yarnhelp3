@@ -5,6 +5,41 @@
     --clr-test-lime: hsl(104, 76%, 47%);
     --clr-test-yellow: yellow;
 
+    /* -- Colour Themes -- */
+
+    /* -> Theme List  - will move to docs after site deployed to https://yarnhelp.app */
+
+    /* Greyscale Theme  - Light */
+    /* Pink01 Theme: Yarn Help! 2.0 Theme */
+    /* Neapolitan Icecream Theme */
+    /* Pink02 Theme */
+    /* Dark Theme */
+    /* Elegant Theme */
+    /* Elegant Wolf Theme */
+
+    /* - not in use: - */
+    /* Blue Theme */
+    /* Green Theme */
+
+    /* Boilerplate for new themes:
+    substitute 'theme' for the name of the theme
+    --clr-theme-body-bg: ;
+    --clr-theme-card-bg: ;
+    --clr-theme-text: ;
+    --clr-theme-heading: ;
+    --clr-theme-card-top: ;
+    --clr-theme-link: ;
+    --clr-theme-link-focus: ; 
+    */
+    /* Default */
+    --clr-body-bg: hsl(0 0% 90%);
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-text: hsl(0 0% 15%);
+    --clr-heading: hsl(0 0% 25%);
+    --clr-card-top: hsl(0 0% 25%);
+    --clr-link: hsl(0 0% 25%);
+    --clr-link-focus: hsl(0, 0%, 10%);
+
     /* Greyscale Theme  - Light */
     --clr-greyscale-body-bg: hsl(0 0% 90%);
     --clr-greyscale-card-bg: hsl(0 0% 100%);
@@ -14,60 +49,83 @@
     --clr-greyscale-link: hsl(0 0% 25%);
     --clr-greyscale-link-focus: hsl(0, 0%, 10%);
 
-    /* Yarn Help! 2.0 Theme */
+    /* Pink01 Theme: Yarn Help! 2.0 Theme */
 
-    --clr-space-cadet-blue: hsl(233, 24%, 19%);
-    --clr-plum: hsl(307, 43%, 39%);
-    --clr-african-violet: hsl(306, 22%, 55%);
-    --clr-rosy-brown: hsl(346, 31%, 72%);
-    --clr-champagne-pink: hsl(20, 51%, 87%);
+    --clr-theme-body-bg: hsl(306, 22%, 55%);    /* african-violet */
+    --clr-theme-card-bg: hsl(20, 51%, 87%);     /* champagne-pink */
+    --clr-theme-text:hsl(233, 24%, 19%);        /* space-cadet-blue */ 
+    --clr-theme-heading: hsl(233, 24%, 19%);    /* space-cadet-blue */
+    --clr-theme-card-top: hsl(346, 31%, 72%);   /* rosy-brown */
+    --clr-theme-link: hsl(307, 43%, 39%) ;      /* plum */
+    --clr-theme-link-focus: hsl(233, 24%, 19%); /* space-cadet-blue */
 
-    /* Pink Theme */
-    --clr-body-bg: hsl(310 50% 90%);
-    --clr-card-bg: hsl(310 50% 100%);
-    --clr-text: hsl(310 50% 15%);
-    --clr-card-top: hsl(310 50% 25%);
-    --clr-heading: hsl(310 50% 25%);
-    --clr-link: hsl(310, 53%, 32%);
+    /* Neapolitan Icecream Theme */
+    /* (From Scrimba Blogspace Project: https://scrimba.com/scrim/coae44480a84f73383f1875d3) */
+    --clr-neapolitan-body-bg:hsl(0, 0%, 11%);           /* black-erie */
+    --clr-neapolitan-card-bg: hsl(31, 51%, 82%);        /* tan-light */
+    --clr-neapolitan-text: hsl(0, 0%, 11%);             /* black-erie */
+    --clr-neapolitan-heading: hsl(356, 31%, 59%);       /* rose-light */
+    --clr-neapolitan-card-top:hsl(356, 25%, 51%);       /* rose-dark */
+    --clr-neapolitan-link: hsl(31, 51%, 94%);           /* tan-extralight */
+    --clr-neapolitan-link-focus: hsl(220, 70%, 12%);    /* blue-space */
+
+    /* Pink02 Theme */
+    --clr-pink02-body-bg: hsl(310 50% 90%);
+    --clr-pink02-card-bg: hsl(310 50% 100%);
+    --clr-pink02-text: hsl(310 50% 15%);
+    --clr-pink02-heading: hsl(310 50% 25%);
+    --clr-pink02-card-top: hsl(310 50% 25%);
+    --clr-pink02-link: hsl(310, 53%, 32%);
+    --clr-pink02-theme-link-focus: ;
+
+    /* Dark Theme */
+    --clr-dark01-body-bg: hsl(209 50% 10%);
+    --clr-dark01-card-bg: hsl(209 50% 5%);
+    --clr-dark01-text: hsl(209 50% 90%);
+    --clr-dark01-card-top: hsl(209 50% 80%);
+    --clr-dark01-heading: hsl(209 50% 80%);
+    --clr-dark01-link: hsl(209, 50%, 80%);
+    /* --clr-dark01-link-focus: ; */
+
+    /* Elegant Theme */
+    /* Elegant theme is from: https://github.com/aylinmarie/elegant-knit She's a wonderful UI Engineer and fibre artist! */
+    --clr-elegant-body-bg: hsl(0, 0%, 94%);
+    --clr-elegant-card-bg: hsl(0, 0%, 100%);
+    --clr-elegant-text: hsl(95, 15%, 16%);      /*charcoal-medium */
+    --clr-elegant-heading: hsl(30, 76%, 34%);   /* wheat */
+    --clr-theme-card-top: hsl(30, 76%, 34%);    /* wheat */
+    --clr-theme-link: hsl(95, 15%, 16%);        /* forest */
+    --clr-theme-link-focus:hsl(30, 76%, 34%);   /* wheat */
+
+    /* Elegant Wolf Theme: Inspired by Typewolf eg: https://www.typewolf.com/google-fonts */
+    --clr-elegant02-body-bg: #e6ddde;
+    --clr-elegant02-card-bg: #d9dfe9;
+    --clr-elegant02-text: #4f3a3d;
+    --clr-elegant02-heading: #654a4e;
+    /* --clr-theme-card-top: ;
+    --clr-theme-link: ;
+    --clr-theme-link-focus: ; */
+    /* also uses white */
+
+    /* -- Themes Not Currently Used -- */
+    /* Move to docs right before deploying to https://yarnhelp.app! */
 
     /* Blue Theme */
-    --clr-body-bg: hsl(209 50% 90%);
+    /* --clr-body-bg: hsl(209 50% 90%);
     --clr-card-bg: hsl(209 50% 100%);
     --clr-text: hsl(209 50% 15%);
-    --clr-card-top: hsl(209 50% 25%);
     --clr-heading: hsl(209 50% 25%);
-    --clr-link:hsl(209, 50%, 25%);
+    --clr-card-top: hsl(209 50% 25%);
+    --clr-link:hsl(209, 50%, 25%); */
+    /* --clr-theme-link-focus: ; */
 
     /* Green Theme */
-    --clr-body-bg: hsl(109 50% 90%);
+    /* --clr-body-bg: hsl(109 50% 90%);
     --clr-card-bg: hsl(109 50% 100%);
     --clr-text: hsl(109 50% 15%);
     --clr-card-top: hsl(109 50% 25%);
     --clr-heading: hsl(109 50% 25%);
-    --clr-link: hsl(109, 50%, 25%);
-
-    /* Dark Theme */
-    --clr-body-bg: hsl(209 50% 10%);
-    --clr-card-bg: hsl(209 50% 5%);
-    --clr-text: hsl(209 50% 90%);
-    --clr-card-top: hsl(209 50% 80%);
-    --clr-heading: hsl(209 50% 80%);
-    --clr-link: hsl(209, 50%, 80%);
-
-    /* Elegant Theme */
-    --clr-elegant-body-bg: hsl(0, 0%, 94%);
-    --clr-elegant-heading: hsl(30, 76%, 34%); /* wheat */
-    --clr-elegant-card-bg: hsl(0, 0%, 100%);
-    --clr-elegant-text: hsl(95, 15%, 16%); /*charcoal-medium
-    /* --clr-elegant-snow: hsl(330, 6%, 93%); */
-    /* --clr-elegant-charcoal: hsl(33, 20%, 11%);*/
-
-    /* Elegant Wolf Theme: Inspired by Typewolf eg: https://www.typewolf.com/google-fonts */
-    --clr-elegant02-body-bg: #e6ddde;
-    --clr-elegant02-headings: #654a4e;
-    --clr-elegant02-card-bg: #d9dfe9;
-    --clr-elegant02-text: #4f3a3d;
-    /* also uses white */
+    --clr-link: hsl(109, 50%, 25%); */
 }
 
 /* ------------------ */
@@ -198,130 +256,151 @@ border-radius: 50%;
 background-color: var(--radio-color);
 }
 
-.color-picker input[type="radio"]#light {
---radio-color: gray;
+.color-picker input[type="radio"]#greyscale {
+--radio-color: var(--clr-greyscale-heading);
 }
-.color-picker input[type="radio"]#pink {
---radio-color: pink;
+
+.color-picker input[type="radio"]#pink01 {
+--radio-color: var(--clr-pink01-heading);
 }
-.color-picker input[type="radio"]#blue {
---radio-color: blue;
+
+.color-picker input[type="radio"]#neapolitan {
+--radio-color: var(--clr-neapolitan-heading);
 }
-/* .color-picker input[type="radio"]#green {
---radio-color: green;
-} */
+
+.color-picker input[type="radio"]#pink02 {
+--radio-color: var(--clr-pink02-heading);
+}
+
 .color-picker input[type="radio"]#dark {
---radio-color: #232323;
+--radio-color: var(--clr-dark-heading);
 }
 
 .color-picker input[type="radio"]#elegant {
-    --radio-color: var(--);
-    }
+    --radio-color: var(--clr-elegant-heading);
+}
+
 .color-picker input[type="radio"]#elegant02 {
-    --radio-color: var(--clr-elegant02-headings);
+    --radio-color: var(--clr-elegant02-heading);
 }
 
 /* -- Individual Themes -- */
 
-.pink {
---clr-body-bg: hsl(310 50% 90%);
---clr-card-bg: hsl(310 50% 100%);
---clr-text: hsl(310 50% 15%);
---clr-card-top: hsl(310 50% 25%);
---clr-heading: hsl(310 50% 25%);
---clr-link: hsl(310, 53%, 32%);
+.greyscale {
+--clr-greyscale-body-bg: var(--clr-greyscale-body-bg);
+--clr-greyscale-card-bg: var(--clr-greyscale-card-bg);
+--clr-greyscale-text: var(--clr-greyscale-text);
+--clr-greyscale-heading: var(--clr-greyscale-heading);
+--clr-greyscale-card-top: var(--clr-greyscale-card-top);
+--clr-greyscale-link: var(--clr-greyscale-link);
+--clr-greyscale-link-focus: var(--clr-greyscale-link-focus);
 }
 
-.blue {
---clr-body-bg: hsl(209 50% 90%);
---clr-card-bg: hsl(209 50% 100%);
---clr-text: hsl(209 50% 15%);
---clr-card-top: hsl(209 50% 25%);
---clr-heading: hsl(209 50% 25%);
---clr-link:hsl(209, 50%, 25%);
+.pink01 {
+--clr-theme-body-bg: hsl(306, 22%, 55%);    /* african-violet */
+--clr-theme-card-bg: hsl(20, 51%, 87%);     /* champagne-pink */
+--clr-theme-text:hsl(233, 24%, 19%);        /* space-cadet-blue */ 
+--clr-theme-heading: hsl(233, 24%, 19%);    /* space-cadet-blue */
+--clr-theme-card-top: hsl(346, 31%, 72%);   /* rosy-brown */
+--clr-theme-link: hsl(307, 43%, 39%) ;      /* plum */
+--clr-theme-link-focus: hsl(233, 24%, 19%); /* space-cadet-blue */
 }
 
-.green {
---clr-body-bg: hsl(109 50% 90%);
---clr-card-bg: hsl(109 50% 100%);
---clr-text: hsl(109 50% 15%);
---clr-card-top: hsl(109 50% 25%);
---clr-heading: hsl(109 50% 25%);
---clr-link: hsl(109, 50%, 25%);
+.neapolitan {
+--clr-neapolitan-body-bg:hsl(0, 0%, 11%);           /* black-erie */
+--clr-neapolitan-card-bg: hsl(31, 51%, 82%);        /* tan-light */
+--clr-neapolitan-text: hsl(0, 0%, 11%);             /* black-erie */
+--clr-neapolitan-heading: hsl(356, 31%, 59%);       /* rose-light */
+--clr-neapolitan-card-top:hsl(356, 25%, 51%);       /* rose-dark */
+--clr-neapolitan-link: hsl(31, 51%, 94%);           /* tan-extralight */
+--clr-neapolitan-link-focus: hsl(220, 70%, 12%);    /* blue-space */
+}
+
+.pink02 {
+--clr-pink02-body-bg: hsl(310 50% 90%);
+--clr-pink02-card-bg: hsl(310 50% 100%);
+--clr-pink02-text: hsl(310 50% 15%);
+--clr-pink02-heading: hsl(310 50% 25%);
+--clr-pink02-card-top: hsl(310 50% 25%);
+--clr-pink02-link: hsl(310, 53%, 32%);
+/* --clr-pink02-theme-link-focus: var(--clr-pink02-link-focus); */
 }
 
 .dark {
---clr-body-bg: hsl(209 50% 10%);
---clr-card-bg: hsl(209 50% 5%);
---clr-text: hsl(209 50% 90%);
---clr-card-top: hsl(209 50% 80%);
---clr-heading: hsl(209 50% 80%);
---clr-link: hsl(209, 50%, 80%);
+--clr-dark01-body-bg: hsl(209 50% 10%);
+--clr-dark01-card-bg: hsl(209 50% 5%);
+--clr-dark01-text: hsl(209 50% 90%);
+--clr-dark01-card-top: hsl(209 50% 80%);
+--clr-dark01-heading: hsl(209 50% 80%);
+--clr-dark01-link: hsl(209, 50%, 80%);
+--clr-dark01-link-focus: var(--clr-dark01-link-focus);
 }
 
-/* Note: Elegant theme is from: https://github.com/aylinmarie/elegant-knit She's a wonderful UI Engineer and fibre artist!
-    --snow: #EFEDEE; - body-bg - grey
-    --wheat: #9a5815; - heading
-    --forest: #272E22; - not used
-    --charcoal: #211C16; - text
-    --white: #FFFFFF; - card-bg
-*/
 .elegant {
-    --clr-card-bg: hsl(0, 0%, 100%);
-    --clr-body-bg: hsl(0, 0%, 94%);
-    --clr-text: hsl(95, 15%, 16%);
-    --clr-card-top:var(--wheat);
-    --clr-heading: var(--wheat);
-    --clr-link: var(--wheat);
+    --clr-card-bg: var(--clr-elegant-card-bg);
+    --clr-body-bg: var(--clr-elegant-body-bg);
+    --clr-text: var(--clr-elegant-text);
+    --clr-card-top:var(--clr-elegant-card-top);
+    --clr-heading: var(--clr-elegant-headings);
+    --clr-link: var(--clr-elegant-link);
 }
 
-.test {
+/* .test {
     --clr-body-bg: hsl(310 50% 90%);
     --clr-card-bg: hsl(310 50% 25%);
     --clr-text: hsl(310 50% 75%);
     --clr-card-top: hsl(310 50% 100%);
     --clr-heading: hsl(310 50% 100%);
     --clr-link: hsl(310, 50%, 100%);
-    }
+    } */
 
-:root:has(#pink:checked) {
---clr-body-bg: hsl(310 50% 90%);
---clr-card-bg: hsl(310 50% 100%);
---clr-text: hsl(310 50% 15%);
---clr-heading: hsl(310 50% 25%);
+/* -- User Checked Theme -- */
+
+:root:has(#greyscale:checked) {
+    --clr-body-bg: var(--clr-pink01-body-bg);
+    --clr-card-bg: var(--clr-pink01-card-bg);
+    --clr-text: var(--clr-pink01-text);
+    --clr-heading: var(--clr-pink01-heading);
 }
 
-:root:has(#blue:checked) {
---clr-body-bg: hsl(209 50% 90%);
---clr-card-bg: hsl(209 50% 100%);
---clr-text: hsl(209 50% 15%);
---clr-heading: hsl(209 50% 25%);
+:root:has(#pink01:checked) {
+    --clr-body-bg: var(--clr-pink01-body-bg);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
 }
 
-:root:has(#green:checked) {
---clr-body-bg: hsl(109 50% 90%);
---clr-card-bg: hsl(109 50% 100%);
---clr-text: hsl(109 50% 15%);
---clr-heading: hsl(109 50% 25%);
+:root:has(#neapolitan:checked) {
+    --clr-body-bg: var(--clr-neapolitan-body-bg);
+    --clr-card-bg: var(--clr-neapolitan-card-bg);
+    --clr-text: var(--clr-neapolitan-text);
+    --clr-heading: var(--clr-neapolitan-heading);
 }
 
 :root:has(#dark:checked) {
---clr-body-bg: hsl(209 50% 10%);
---clr-card-bg: hsl(209 50% 5%);
---clr-text: hsl(209 50% 90%);
---clr-heading: hsl(209 50% 80%);
+    --clr-body-bg: var(--clr-dark01-body-bg);
+    --clr-card-bg: var(--clr-dark01-card-bg);
+    --clr-text: var(--clr-dark01-text);
+    --clr-heading: var(--clr-dark01-heading);
 }
 
 :root:has(#elegant:checked) {
-    --clr-body-bg: hsl(0, 0%, 94%);
-    --clr-card-bg: hsl(0, 0%, 100%);
-    --clr-text: hsl(95, 15%, 16%);
-    --clr-heading: var(--wheat);
+    --clr-body-bg: var(--clr-elegant-body-bg);
+    --clr-card-bg: var(--clr-elegant-card-bg);
+    --clr-text: var(--clr-elegant-text);
+    --clr-heading: var(--clr-elegant-heading);
 }
 
-:root:has(#test:checked) {
+:root:has(#elegant01:checked) {
+    --clr-body-bg: var(--clr-elegant01-body-bg);
+    --clr-card-bg: var(--clr-elegant01-card-bg);
+    --clr-text: var(--clr-elegant01-text);
+    --clr-heading: var(--clr-elegant01-heading);
+}
+
+/* :root:has(#test:checked) {
     --clr-body-bg: hsl(209 50% 10%);
     --clr-card-bg: hsl(209 50% 5%);
     --clr-text: hsl(209 50% 90%);
-    --clr-heading: hsl(209 50% 80%);
-}
+    --clr-heading: hsl(209 50% 80%); */
+
