@@ -1,4 +1,5 @@
 :root {
+    /* Default Theme: Light Theme */
     --clr-body-bg: hsl(0 0% 90%);
     --clr-card-bg: hsl(0 0% 100%);
     --clr-text: hsl(0 0% 15%);
@@ -6,14 +7,24 @@
     --clr-card-top: hsl(0 0% 25%);
     --clr-link: hsl(0 0% 25%);
     --clr-link-focus: hsl(0, 0%, 10%);
+
+    /* Testing Colours: Only used when testing code */
     --clr-test-red: red;
     --clr-test-lime: hsl(104, 76%, 47%);
     --clr-test-yellow: yellow;
+
     /* Elegant Theme */
     --snow: #EFEDEE;
     --wheat: #9a5815;
     --forest: #272E22;
     --charcoal: #211C16;
+
+    /* Elegant Wolf Theme: Inspired by Typewolf eg: https://www.typewolf.com/google-fonts */
+    --clr-elegant02-body-bg: #e6ddde;
+    --clr-elegant02-headings: #654a4e;
+    --clr-elegant02-card-bg: #d9dfe9;
+    --clr-elegant02-text: #4b3538;
+    /* also uses white */
 }
 
 /* ------------------ */
