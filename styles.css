@@ -1,29 +1,72 @@
 :root {
-    /* Default Theme: Light Theme */
-    --clr-body-bg: hsl(0 0% 90%);
-    --clr-card-bg: hsl(0 0% 100%);
-    --clr-text: hsl(0 0% 15%);
-    --clr-heading: hsl(0 0% 25%);
-    --clr-card-top: hsl(0 0% 25%);
-    --clr-link: hsl(0 0% 25%);
-    --clr-link-focus: hsl(0, 0%, 10%);
 
-    /* Testing Colours: Only used when testing code */
+     /* Testing Colours: Only used when testing code */
     --clr-test-red: red;
     --clr-test-lime: hsl(104, 76%, 47%);
     --clr-test-yellow: yellow;
 
+    /* Greyscale Theme  - Light */
+    --clr-greyscale-body-bg: hsl(0 0% 90%);
+    --clr-greyscale-card-bg: hsl(0 0% 100%);
+    --clr-greyscale-text: hsl(0 0% 15%);
+    --clr-greyscale-heading: hsl(0 0% 25%);
+    --clr-greyscale-card-top: hsl(0 0% 25%);
+    --clr-greyscale-link: hsl(0 0% 25%);
+    --clr-greyscale-link-focus: hsl(0, 0%, 10%);
+
+    /* Yarn Help! 2.0 Theme */
+
+    --clr-space-cadet-blue: hsl(233, 24%, 19%);
+    --clr-plum: hsl(307, 43%, 39%);
+    --clr-african-violet: hsl(306, 22%, 55%);
+    --clr-rosy-brown: hsl(346, 31%, 72%);
+    --clr-champagne-pink: hsl(20, 51%, 87%);
+
+    /* Pink Theme */
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-card-top: hsl(310 50% 25%);
+    --clr-heading: hsl(310 50% 25%);
+    --clr-link: hsl(310, 53%, 32%);
+
+    /* Blue Theme */
+    --clr-body-bg: hsl(209 50% 90%);
+    --clr-card-bg: hsl(209 50% 100%);
+    --clr-text: hsl(209 50% 15%);
+    --clr-card-top: hsl(209 50% 25%);
+    --clr-heading: hsl(209 50% 25%);
+    --clr-link:hsl(209, 50%, 25%);
+
+    /* Green Theme */
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-card-top: hsl(109 50% 25%);
+    --clr-heading: hsl(109 50% 25%);
+    --clr-link: hsl(109, 50%, 25%);
+
+    /* Dark Theme */
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-card-top: hsl(209 50% 80%);
+    --clr-heading: hsl(209 50% 80%);
+    --clr-link: hsl(209, 50%, 80%);
+
     /* Elegant Theme */
-    --snow: #EFEDEE;
-    --wheat: #9a5815;
-    --forest: #272E22;
-    --charcoal: #211C16;
+    --clr-elegant-body-bg: hsl(0, 0%, 94%);
+    --clr-elegant-heading: hsl(30, 76%, 34%); /* wheat */
+    --clr-elegant-card-bg: hsl(0, 0%, 100%);
+    --clr-elegant-text: hsl(95, 15%, 16%); /*charcoal-medium
+    /* --clr-elegant-snow: hsl(330, 6%, 93%); */
+    /* --clr-elegant-charcoal: hsl(33, 20%, 11%);*/
 
     /* Elegant Wolf Theme: Inspired by Typewolf eg: https://www.typewolf.com/google-fonts */
     --clr-elegant02-body-bg: #e6ddde;
     --clr-elegant02-headings: #654a4e;
     --clr-elegant02-card-bg: #d9dfe9;
-    --clr-elegant02-text: #4b3538;
+    --clr-elegant02-text: #4f3a3d;
     /* also uses white */
 }
 
@@ -172,11 +215,11 @@ background-color: var(--radio-color);
 }
 
 .color-picker input[type="radio"]#elegant {
-    --radio-color: #9a5815;
+    --radio-color: var(--);
     }
-/* .color-picker input[type="radio"]#test {
-    --radio-color: #4e1a4b;
-} */
+.color-picker input[type="radio"]#elegant02 {
+    --radio-color: var(--clr-elegant02-headings);
+}
 
 /* -- Individual Themes -- */
 
