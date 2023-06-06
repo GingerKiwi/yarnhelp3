@@ -1,4 +1,4 @@
-import { pulloverData, pulloverCrochetData, scarfData } from './data.js';
+import { pulloverData, pulloverCrochetData, scarfData, scarfCrochetData } from './data.js';
 
 const howMuchYarnFrom = document.querySelector('.how-much-yarn');
 
@@ -30,7 +30,7 @@ function renderMessageHtmlCrochet(projectTypeCrochet, formValues) {
 	const { yardageNeededCrochet } = projectTypeCrochet[formValues.weight];
 
 	for (const [projectCrochet, yardageCrochet] of Object.entries(yardageNeededCrochet)) {
-		const ballsNeededCrochet = Math.ceil(yardageCrochet * 1.05/ formValues.yardsPerBall);
+		const ballsNeededCrochet = Math.ceil(yardageCrochet * 1.05 * 1.25/ formValues.yardsPerBall);
 		const messageElementCrochet = document.querySelector(`.${projectCrochet}`);
 
 		if (messageElementCrochet) {
@@ -46,6 +46,7 @@ howMuchYarnFrom.addEventListener('submit', function(evt) {
 	const formValues = Object.fromEntries(formData.entries());
 
 	renderMessageHtml(pulloverData, formValues);
-	renderMessageHtml(scarfData, formValues);
 	renderMessageHtmlCrochet(pulloverCrochetData, formValues)
+	renderMessageHtml(scarfData, formValues);
+	renderMessageHtmlCrochet(scarfCrochetData, formValues);
 });
