@@ -79,8 +79,8 @@ export const pulloverData = {
             adultXxlPullover: 1850,
         }
     },
-    chunky05: {
-        name: "Chunky 05",
+    bulky05: {
+        name: "Bulky 05",
         yardageNeeded: {
             // babyPullover: null,
             // It doesn't make sense to make a baby pullover with chunky yarn.
