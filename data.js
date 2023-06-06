@@ -19,7 +19,7 @@
  * @property {YarnWeight} sport02 projects with Sport 02 weight yarn.
  * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
  * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
- * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
+ * @property {YarnWeight} bulky05 projects with Chunky 05 weight yarn.
  */
 
 /**
@@ -29,7 +29,7 @@
  * @property {YarnWeight} sport02 projects with Sport 02 weight yarn.
  * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
  * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
- * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
+ * @property {YarnWeight} bulky05 projects with Chunky 05 weight yarn.
  */
 
 /** @type {ProjectType} */
