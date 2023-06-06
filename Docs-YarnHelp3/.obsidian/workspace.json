@@ -11,11 +11,28 @@
             "id": "d2fcb80c903820bf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "YarnHelp2-Docs/Calculations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9fd086100bfca448",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Yardage Needed - Pullovers.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Yardage Needed - Pullovers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Yardage Needed - Pullovers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Yardage Needed - Pullovers.md"
+              }
             }
           }
         ]
@@ -138,8 +159,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2fcb80c903820bf",
+  "active": "ef3271a778e61f0a",
   "lastOpenFiles": [
-    "CHANGELOG.md"
+    "YarnHelp2-Docs/Calculations.md",
+    "Yardage Needed - Pullovers.md",
+    "YarnHelp2-Docs/PDF-References/How Much Yarn Do I Need – TwistedYarnShop.pdf",
+    "YarnHelp2-Docs/PDF-References/How Much Yarn Do I Need for a Knitted Sweater - Interweave.pdf",
+    "CHANGELOG.md",
+    "YarnHelp2-Docs/CHANGELOG.md",
+    "YarnHelp2-Docs/PDF-References/How Long & Wide Should a Scarf Be - DessertBlossomCrafts.pdf",
+    "YarnHelp2-Docs/PDF-References/CYC_YarnStandards-2018-11-06.pdf",
+    "YarnHelp2-Docs/notes.md",
+    "YarnHelp2-Docs/Readme1.0.md",
+    "YarnHelp2-Docs/PDF-References",
+    "YarnHelp2-Docs/A11y.md",
+    "YarnHelp2-Docs",
+    "YarnHelp-Docs/Calculations.md",
+    "YarnHelp-Docs/notes.md",
+    "YarnHelp-Docs/A11y.md",
+    "YarnHelp-Docs/PDF-References/How Long & Wide Should a Scarf Be - DessertBlossomCrafts.pdf",
+    "YarnHelp-Docs/PDF-References/CYC_YarnStandards-2018-11-06.pdf",
+    "YarnHelp-Docs/PDF-References/How Much Yarn Do I Need – TwistedYarnShop.pdf",
+    "YarnHelp-Docs/PDF-References/How Much Yarn Do I Need for a Knitted Sweater - Interweave.pdf",
+    "YarnHelp-Docs/Readme1.0.md",
+    "YarnHelp-Docs/CHANGELOG.md"
   ]
 }

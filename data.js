@@ -38,34 +38,34 @@ export const pulloverData = {
     fingering01: {
         name: "Fingering 01",
         yardageNeeded: {
-            babyPullover: 700,
-            toddlerPullover: 0,
-            childPullover: 0,
-            adultSmallPullover: 1700,
-            adultLargePullover: 0,
-            adultXxlPullover: 0,
+            babyPullover: 725,
+            toddlerPullover: 1200,
+            childPullover: 1550,
+            adultSmallPullover: 2400,
+            adultLargePullover: 3000,
+            adultXxlPullover: 3650,
         }
     },
     sport02: {
         name: "Sport 02",
         yardageNeeded: {
-            babyPullover: 0,
-            toddlerPullover: 0,
-            childPullover: 0,
-            adultSmallPullover: 0,
-            adultLargePullover: 0,
-            adultXxlPullover: 0,
+            babyPullover: 650,
+            toddlerPullover: 1000,
+            childPullover: 1500,
+            adultSmallPullover: 1600,
+            adultLargePullover: 2100,
+            adultXxlPullover: 2200,
         }
     },
     dk03: {
         name: "DK 03",
         yardageNeeded: {
-            babyPullover: 0,
-            toddlerPullover: 0,
-            childPullover: 0,
-            adultSmallPullover: 0,
-            adultLargePullover: 0,
-            adultXxlPullover: 0,
+            babyPullover: 630,
+            toddlerPullover: 945,
+            childPullover: 1418,
+            adultSmallPullover: 1575,
+            adultLargePullover: 1995,
+            adultXxlPullover: 2195,
         }
     },
     worsted04: {
@@ -82,12 +82,13 @@ export const pulloverData = {
     chunky05: {
         name: "Chunky 05",
         yardageNeeded: {
-            babyPullover: 0,
-            toddlerPullover: 0,
-            childPullover: 0,
-            adultSmallPullover: 0,
-            adultLargePullover: 0,
-            adultXxlPullover: 0,
+            // babyPullover: null,
+            // It doesn't make sense to make a baby pullover with chunky yarn.
+            toddlerPullover: 650,
+            childPullover: 1000,
+            adultSmallPullover: 1200,
+            adultLargePullover: 1500,
+            adultXxlPullover: 1650,
         }
     }
 };
