@@ -25,6 +25,10 @@ function renderMessageHtml(projectType, formValues) {
 	}
 }
 
+// Given that calculating the yardageNeededCrochet is just 1.25 * yardageNeeded:
+// Could this be refactored to just use the data from kniting projects, multiply it by 1.25, 
+// then output the message to appropriate <p> in howmuchyarn.html?
+
 function renderMessageHtmlCrochet(projectTypeCrochet, formValues) {
 	/** @type {import('./data.js').YarnWeight} */
 	const { yardageNeededCrochet } = projectTypeCrochet[formValues.weight];
