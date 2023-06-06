@@ -50,7 +50,7 @@ howMuchYarnFrom.addEventListener('submit', function(evt) {
 	const formValues = Object.fromEntries(formData.entries());
 
 	renderMessageHtml(pulloverData, formValues);
-	renderMessageHtmlCrochet(pulloverCrochetData, formValues)
+	renderMessageHtmlCrochet(pulloverCrochetData, formValues);
 	renderMessageHtml(scarfData, formValues);
 	renderMessageHtmlCrochet(scarfCrochetData, formValues);
 });
