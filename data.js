@@ -103,31 +103,6 @@ export const pulloverData = {
     }
 };
 
-
-/** @type {ProjectType} */
-export const scarfData = {
-    fingering01: {
-        name: "Fingering 01",
-        yardageNeeded: {
-            childScarf: 250 * 2,
-            adultSmallScarf: 409 * 2,
-            adultLargeScarf: 534 * 2,
-            adultExtraLongScarf: 667 * 2,
-            doctorWhoScarf: 1260 * 2,
-        }
-    },
-    worsted04: {
-        name: "Worsted 04",
-        yardageNeeded: {
-            childScarf: 250,
-            adultSmallScarf: 409,
-            adultLargeScarf: 534,
-            adultExtraLongScarf: 667,
-            doctorWhoScarf: 1260,
-        }
-    },
-};
-
 /** @type {ProjectTypeCrochet} */
 export const pulloverCrochetData = {
     lace00: {
@@ -199,3 +174,66 @@ export const pulloverCrochetData = {
     }
 };
 
+/** @type {ProjectType} */
+export const scarfData = {
+    fingering01: {
+        name: "Fingering 01",
+        yardageNeeded: {
+            childScarf: 250 * 2,
+            adultSmallScarf: 409 * 2,
+            adultLargeScarf: 534 * 2,
+            adultExtraLongScarf: 667 * 2,
+            doctorWhoScarf: 1260 * 2,
+        }
+    },
+    sport02: {
+        name: "Sport 02",
+        yardageNeeded: {
+            childScarf: 250 * 2,
+            adultSmallScarf: 409 * 2,
+            adultLargeScarf: 534 * 2,
+            adultExtraLongScarf: 667 * 2,
+            doctorWhoScarf: 1260 * 2,
+        }
+    },
+    dk03: {
+        name: "DK 03",
+        yardageNeeded: {
+            childScarf: 250 * 2,
+            adultSmallScarf: 409 * 2,
+            adultLargeScarf: 534 * 2,
+            adultExtraLongScarf: 667 * 2,
+            doctorWhoScarf: 1260 * 2,
+        }
+    },
+    worsted04: {
+        name: "Worsted 04",
+        yardageNeeded: {
+            childScarf: 250,
+            adultSmallScarf: 409,
+            adultLargeScarf: 534,
+            adultExtraLongScarf: 667,
+            doctorWhoScarf: 1260,
+        }
+    },
+    bulky05: {
+        name: "Bulky 05",
+        yardageNeeded: {
+            childScarf: 250 * 2,
+            adultSmallScarf: 409 * 2,
+            adultLargeScarf: 534 * 2,
+            adultExtraLongScarf: 667 * 2,
+            doctorWhoScarf: 1260 * 2,
+        }
+    },
+    superBulky06: {
+        name: "Super Bulky 06",
+        yardageNeeded: {
+            childScarf: 250 * 2,
+            adultSmallScarf: 409 * 2,
+            adultLargeScarf: 534 * 2,
+            adultExtraLongScarf: 667 * 2,
+            doctorWhoScarf: 1260 * 2,
+        }
+    },
+};
