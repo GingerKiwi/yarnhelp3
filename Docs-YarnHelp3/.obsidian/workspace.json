@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "YarnHelp2-Docs/notes.md",
+                "file": "YarnHelp2-Docs/Calculations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YarnHelp2-Docs/notes.md",
+                "file": "YarnHelp2-Docs/Calculations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "YarnHelp2-Docs/notes.md",
+                "file": "YarnHelp2-Docs/Calculations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "YarnHelp2-Docs/notes.md"
+                "file": "YarnHelp2-Docs/Calculations.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "3ccbdb1ec088c883",
   "lastOpenFiles": [
+    "YarnHelp2-Docs/notes.md",
     "YardageNeeded-Scarfs.md",
     "Yardage Needed - Pullovers.md",
-    "YarnHelp2-Docs/notes.md",
     "YardageNeeded-Pullovers.md",
     "YarnHelp2-Docs/Calculations.md",
     "YarnHelp2-Docs/Readme1.0.md",

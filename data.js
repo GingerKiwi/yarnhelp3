@@ -94,6 +94,7 @@ export const pulloverData = {
         yardageNeeded: {
             // babyPullover: null,
             // It doesn't make sense to make a baby pullover with chunky yarn.
+            babyPullover: 450,
             toddlerPullover: 650,
             childPullover: 1000,
             adultSmallPullover: 1200,
