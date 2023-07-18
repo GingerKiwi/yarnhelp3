@@ -52,9 +52,8 @@
 
     /* Starwars Dark Theme */
     --starwars--clr-yellow: hsl(54, 100%, 56%); /*ffe81f*/
-    --starwars--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
     --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
-    --starwars--clr-black:var(hsla(0, 0%, 11%, 0.902)); /*c1c1ce6*/
+    --starwars--clr-black-almost:var(hsla(0, 0%, 11%, 0.902)); /*c1c1ce6*/
     --starwars--ff-heading1: 'Star Jedi', mono;
     --starwars--ff-heading: 'Royal Acidbath', cursive;
     --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
@@ -309,9 +308,9 @@ background-color: var(--radio-color);
 }
 
 .starwars-dark {
-    --clr-body-bg: var(--starwars--clr-black);
+    --clr-body-bg: var(--starwars--clr-black-almost);
     --clr-card-bg: var(--starwars--clr-black);
-    --clr-card-top: hsl(109 50% 25%);
+    --clr-card-top: var(--starwars--clr-yellow);
 
     --hero-inner--title-bg-clr: var(--starwars--clr-black);
     --hero-inner-title-border-clr: var(--starwars--clr-yellow);
