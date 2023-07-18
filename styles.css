@@ -148,71 +148,14 @@ background-color: var(--radio-color);
 .color-picker input[type="radio"]#light {
 --radio-color: gray;
 }
-.color-picker input[type="radio"]#pink {
---radio-color: pink;
-}
-.color-picker input[type="radio"]#blue {
---radio-color: blue;
-}
-/* .color-picker input[type="radio"]#green {
---radio-color: green;
-} */
-.color-picker input[type="radio"]#dark {
---radio-color: #232323;
-}
 
 .color-picker input[type="radio"]#elegant {
     --radio-color: #9a5815;
     }
-/* .color-picker input[type="radio"]#test {
-    --radio-color: #4e1a4b;
-} */
+
 
 /* -- Individual Themes -- */
 
-.pink {
---clr-body-bg: hsl(310 50% 90%);
---clr-card-bg: hsl(310 50% 100%);
---clr-text: hsl(310 50% 15%);
---clr-card-top: hsl(310 50% 25%);
---clr-heading: hsl(310 50% 25%);
---clr-link: hsl(310, 53%, 32%);
-}
-
-.blue {
---clr-body-bg: hsl(209 50% 90%);
---clr-card-bg: hsl(209 50% 100%);
---clr-text: hsl(209 50% 15%);
---clr-card-top: hsl(209 50% 25%);
---clr-heading: hsl(209 50% 25%);
---clr-link:hsl(209, 50%, 25%);
-}
-
-.green {
---clr-body-bg: hsl(109 50% 90%);
---clr-card-bg: hsl(109 50% 100%);
---clr-text: hsl(109 50% 15%);
---clr-card-top: hsl(109 50% 25%);
---clr-heading: hsl(109 50% 25%);
---clr-link: hsl(109, 50%, 25%);
-}
-
-.dark {
---clr-body-bg: hsl(209 50% 10%);
---clr-card-bg: hsl(209 50% 5%);
---clr-text: hsl(209 50% 90%);
---clr-card-top: hsl(209 50% 80%);
---clr-heading: hsl(209 50% 80%);
---clr-link: hsl(209, 50%, 80%);
-}
-
-/* Note: Elegant theme is from: https://github.com/aylinmarie/elegant-knit She's a wonderful UI Engineer and fibre artist!
-    --snow: #EFEDEE; - body-bg - grey
-    --wheat: #9a5815; - heading
-    --forest: #272E22; - not used
-    --charcoal: #211C16; - text
-    --white: #FFFFFF; - card-bg
-*/
 .elegant {
     --clr-card-bg: hsl(0, 0%, 100%);
     --clr-body-bg: hsl(0, 0%, 94%);
@@ -222,53 +165,9 @@ background-color: var(--radio-color);
     --clr-link: var(--wheat);
 }
 
-.test {
-    --clr-body-bg: hsl(310 50% 90%);
-    --clr-card-bg: hsl(310 50% 25%);
-    --clr-text: hsl(310 50% 75%);
-    --clr-card-top: hsl(310 50% 100%);
-    --clr-heading: hsl(310 50% 100%);
-    --clr-link: hsl(310, 50%, 100%);
-    }
-
-:root:has(#pink:checked) {
---clr-body-bg: hsl(310 50% 90%);
---clr-card-bg: hsl(310 50% 100%);
---clr-text: hsl(310 50% 15%);
---clr-heading: hsl(310 50% 25%);
-}
-
-:root:has(#blue:checked) {
---clr-body-bg: hsl(209 50% 90%);
---clr-card-bg: hsl(209 50% 100%);
---clr-text: hsl(209 50% 15%);
---clr-heading: hsl(209 50% 25%);
-}
-
-:root:has(#green:checked) {
---clr-body-bg: hsl(109 50% 90%);
---clr-card-bg: hsl(109 50% 100%);
---clr-text: hsl(109 50% 15%);
---clr-heading: hsl(109 50% 25%);
-}
-
-:root:has(#dark:checked) {
---clr-body-bg: hsl(209 50% 10%);
---clr-card-bg: hsl(209 50% 5%);
---clr-text: hsl(209 50% 90%);
---clr-heading: hsl(209 50% 80%);
-}
-
 :root:has(#elegant:checked) {
     --clr-body-bg: hsl(0, 0%, 94%);
     --clr-card-bg: hsl(0, 0%, 100%);
     --clr-text: hsl(95, 15%, 16%);
     --clr-heading: var(--wheat);
-}
-
-:root:has(#test:checked) {
-    --clr-body-bg: hsl(209 50% 10%);
-    --clr-card-bg: hsl(209 50% 5%);
-    --clr-text: hsl(209 50% 90%);
-    --clr-heading: hsl(209 50% 80%);
 }
