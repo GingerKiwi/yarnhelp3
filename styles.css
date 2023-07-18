@@ -218,12 +218,14 @@ background-color: var(--radio-color);
 .groovy {
     --clr-card-bg: var(--groovy--clr-white);
     --clr-body-bg: var(--groovy--clr-orange);
-    --clr-text: hsl(95, 15%, 16%);
     --clr-card-top:var(--groovy--clr-pink);
+
     --clr-heading1: var(--groovy--clr-white);
     --clr-heading: var(--groovy--clr-pink);
     --clr-tagline: var(--groovy--clr-black);
+    --clr-text: hsl(95, 15%, 16%);
     --clr-link: var(--groovy--clr-pink);
+
     --ff-heading1: var(--groovy--ff-heading1);
     --ff-heading: var(--groovy--ff-heading);
     --ff-tagline: var(--groovy--ff-tagline);
@@ -236,3 +238,20 @@ background-color: var(--radio-color);
     --clr-text: hsl(95, 15%, 16%);
     --clr-heading: var(--wheat);
 }
+
+/* EXAMPLE
+.green {
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-card-top: hsl(109 50% 25%);
+    --clr-heading: hsl(109 50% 25%);
+    --clr-link: hsl(109, 50%, 25%);
+}
+
+:root:has(#green:checked) {
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-heading: hsl(109 50% 25%);
+} */
