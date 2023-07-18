@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Send+Flowers&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Audiowide&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Send+Flowers&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
     <title>Yarn Help!</title>
@@ -16,13 +16,18 @@
     <form class="color-picker" action="">
       <fieldset>
         <legend class="visually-hidden">Pick a color scheme</legend>
+        
+        <label for="groovy" class="visually-hidden">Groovy Theme</label>
+        <input type="radio" id="groovy" name="theme" checked />
+
+        <label for="starwars-dark" class="visually-hidden">Starwars Dark Theme</label>
+        <input type="radio" name="theme" id="starwars-dark" />
+
         <label for="light" class="visually-hidden">Light</label>
-        <input type="radio" name="theme" id="light" checked />
+        <input type="radio" name="theme" id="light" />
 
-        <label for="groovy" class="visually-hidden">Groovy theme</label>
-        <input type="radio" id="groovy" name="theme" />
 
-        <label for="elegant" class="visually-hidden">Elegant theme</label>
+        <label for="elegant" class="visually-hidden">Elegant Theme</label>
         <input type="radio" id="elegant" name="theme" />
 
       </fieldset>
@@ -35,11 +40,7 @@
         </div>  
         <h2 class="tagline">Help with Yarn Math for Knitters, Crocheters, <br> and the Wonderful People Who Gift Us Yarn.</h2>
           <a href="https://example.com/" class="btn">Go ahead...</a>
-          <blockquote>
-            <p>“Knitting is, at its fundamentals, a binary code featuring top-down design, standardized submodules, and recursive logic that relies on ratios, mathematical principles, and an intuitive grasp of three-dimensional geometry.”
-              <br>
-              ~ Kim Salazar on Knit List</p>
-          </blockquote>
+          
       </div>
     </section>
   </header>
@@ -47,7 +48,12 @@
   
     <main>
       <div class="wrapper">
-        <h1>YARN HELP!</h1>
+        <blockquote>
+          <p>“Knitting is, at its fundamentals, a binary code featuring top-down design, standardized submodules, and recursive logic that relies on ratios, mathematical principles, and an intuitive grasp of three-dimensional geometry.”
+            <br>
+            ~ Kim Salazar on Knit List</p>
+        </blockquote>
+        <div class="card--content">
         <h2>3.0 Version - Is Being Built in Public</h2>
         <p>This updated design and "DRYer" Javascript code is being built in public. Every day that I work on it, the updates will be deployed live. Note that I tend to use really bright colours like red and green for css testing purposes. That currently includes the links for this site. Take a look at the code here: <a href="https://github.com/GingerKiwi/yarnhelp3">GitHub repo for Yarn Help 3.0</a></p>
         <p>For the 2.0 version which has caluculations for worsted 04 weight (thickness) yarn for sweaters, scarfs, and blankets for both knit and crochet please visit <a href="https://yarnhelp2.netlify.app">https://yarnhelp2.netlify.app</a> </p>
@@ -72,7 +78,7 @@
           </ul>    
         </p>
         <p><a href="https://yarnhelp2.netlify.app/" target="_blank">Yarn Help 2.0</a></p>
-
+      </div>
         <h2>Pages</h2>
         <div class="auto-grid">
           <div class="card">

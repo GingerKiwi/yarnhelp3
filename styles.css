@@ -4,6 +4,9 @@
 
     font-family: 'Royal Acid';
     src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
+
+    font-family: 'Star Jedi';
+    src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
 }
 
 :root {
@@ -19,6 +22,10 @@
     /* Default Light Grey Theme */
     --clr-body-bg: hsl(0 0% 90%); 
     --clr-card-bg: hsl(0 0% 100%);
+    --hero-inner--title-bg-clr: var(--clr-test-blue);
+    --hero-inner-title-border-clr: var(--clr-test-red);
+    --hero-inner-bg: var(--clr-test-yellow);
+
     --clr-text: hsl(0 0% 15%);
     --clr-heading1: hsl(0 0% 25%);
     --clr-heading: hsl(0 0% 25%);
@@ -26,6 +33,7 @@
     --clr-card-top: hsl(0 0% 25%);
     --clr-link: hsl(0 0% 25%);
     --clr-link-focus: hsl(0, 0%, 10%);
+
     --ff-code: 'Ubuntu Mono', monospace;
     --ff-heading: 'Audiowide', cursive;
     --ff-tagline: 'Arial', sans;
@@ -35,11 +43,22 @@
     --groovy--clr-orange: hsl(29, 96%, 44%); /*DD6D05*/
     --groovy--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
     --groovy--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
+    --groovy--clr-grey-light: hsl(0, 4%, 81%); /*D1CDCD*/
     --groovy--clr-black:var(hsl(0, 0%, 0%)); /*000000*/
     --groovy--ff-heading1: 'Royal Acidbath', cursive;
     --groovy--ff-heading: 'Royal Acidbath', cursive;
     --groovy--ff-tagline: 'Royal Acid', cursive;
     --groovy--ff-body:'Familjen Grotesk', sans;
+
+    /* Starwars Dark Theme */
+    --starwars--clr-yellow: hsl(54, 100%, 56%); /*ffe81f*/
+    --starwars--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
+    --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
+    --starwars--clr-black:var(hsla(0, 0%, 11%, 0.902)); /*c1c1ce6*/
+    --starwars--ff-heading1: 'Star Jedi', mono;
+    --starwars--ff-heading: 'Royal Acidbath', cursive;
+    --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
+    --starwars--ff-body:'Familjen Grotesk', sans;
 
     /* Elegant Theme */
     --elegant--clr-snow: hsl(330, 6%, 93%); /*#EFEDEE*/
@@ -79,6 +98,10 @@ h3 {
 blockquote {
     color: var(--ff-code);
     font-style: italic;
+    background-color: var(--clr-card-bg);
+    padding: 1rem;
+    border-radius: 1.25rem;
+    border: 8px solid #B1038B;
 }
 
 .tagline {
@@ -99,6 +122,12 @@ a:focus, a:hover {
 
 a:active {
     color: var(--clr-test-yellow);
+}
+
+.card--content {
+    background-color: var(--clr-card-bg);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
 }
 
 /* -------------- */
@@ -132,7 +161,7 @@ margin-inline: auto;
     text-align: center;
 
     /* Background styles */
-    background-image: url(/assets/hero-medium.jpg);
+    background-image: url(/assets/hero--mobile.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -141,24 +170,24 @@ margin-inline: auto;
 
 .hero h1 {
     /* Text styles */
-    font-size: 5em;
+    font-size: 3em;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
 .hero--inner {
-    background-color: #D1CDCD;
-    padding: 2rem;
-    margin: 2rem;
+    background-color: var(--hero-inner-bg);
+    padding: 1.5rem;
+    margin: 1.5rem;
     border-radius: 1.25rem;
     max-width: 80vw;
 }
 
 .hero--inner-title {
-    background-color: var(--groovy--clr-orange);
-    padding: 1.25rem;
-    border-radius: 1.25rem;
-    border: 4px solid var(--groovy--clr-pink);
+    background-color: var(--hero-inner--title-bg-clr);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 8px solid var(--hero-inner-title-border-clr);
 }
 
 
@@ -258,19 +287,14 @@ background-color: var(--radio-color);
 
 /* -- Individual Themes -- */
 
-.elegant {
-    --clr-card-bg: hsl(0, 0%, 100%);
-    --clr-body-bg: hsl(0, 0%, 94%);
-    --clr-text: hsl(95, 15%, 16%);
-    --clr-card-top:var(--wheat);
-    --clr-heading: var(--wheat);
-    --clr-link: var(--wheat);
-}
-
 .groovy {
     --clr-card-bg: var(--groovy--clr-white);
     --clr-body-bg: var(--groovy--clr-orange);
     --clr-card-top:var(--groovy--clr-pink);
+
+    --hero-inner--title-bg-clr: var(--groovy--clr-orange);
+    --hero-inner-title-border-clr: var(--groovy--clr-pink);
+    --hero-inner-bg: var(--groovy--clr-grey-light);
 
     --clr-heading1: var(--groovy--clr-white);
     --clr-heading: var(--groovy--clr-pink);
@@ -282,6 +306,43 @@ background-color: var(--radio-color);
     --ff-heading: var(--groovy--ff-heading);
     --ff-tagline: var(--groovy--ff-tagline);
     --ff-body: var(--groovy--ff-body);
+}
+
+.starwars-dark {
+    --clr-body-bg: var(--starwars--clr-black);
+    --clr-card-bg: var(--starwars--clr-black);
+    --clr-card-top: hsl(109 50% 25%);
+
+    --hero-inner--title-bg-clr: var(--starwars--clr-black);
+    --hero-inner-title-border-clr: var(--starwars--clr-yellow);
+    --hero-inner-bg: var(--starwars--clr-black);
+
+    --clr-heading1: var(--starwars--clr-yellow);
+    --clr-heading: var(--starwars--clr-yellow);
+    --clr-tagline: var(--starwars--clr-white);
+    --clr-text: hsl(109 50% 15%);
+    --clr-link: var(--clr-test-lime);
+
+    --ff-heading1: var(--starwars--ff-heading1);
+    --ff-heading: var(--starwars--ff-heading);
+    --ff-tagline: var(--starwars--ff-tagline);
+    --ff-body: var(--starwars--ff-body);
+}
+
+:root:has(#starwars-dark:checked) {
+    --clr-body-bg: var(--starwars--clr-black);
+    --clr-card-bg: var(--starwars--clr-black);
+    --clr-text: var(--starwars--clr-white);
+    --clr-heading: var(--starwars--clr-yellow);
+}
+
+.elegant {
+    --clr-card-bg: hsl(0, 0%, 100%);
+    --clr-body-bg: hsl(0, 0%, 94%);
+    --clr-text: hsl(95, 15%, 16%);
+    --clr-card-top:var(--wheat);
+    --clr-heading: var(--wheat);
+    --clr-link: var(--wheat);
 }
 
 :root:has(#elegant:checked) {
@@ -307,3 +368,37 @@ background-color: var(--radio-color);
     --clr-text: hsl(109 50% 15%);
     --clr-heading: hsl(109 50% 25%);
 } */
+
+@media screen and (min-width: 600px)  {
+    
+    .hero {
+        background-image: url(/assets/hero-medium.jpg);
+    }
+    .hero h1 {
+        /* Text styles */
+        font-size: 5em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .hero--inner {
+        /* background-color: #D1CDCD; */
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 1.25rem;
+        max-width: 80vw;
+    }
+
+    .hero--inner-title {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+
+    }
+
+    /* blockquote {
+        max-width: 70vw;
+        align-self: center;
+    } */
+
+
+}
