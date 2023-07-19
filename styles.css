@@ -72,7 +72,7 @@
     --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
     --starwars--clr-black:hsla(0, 0%, 11%, 0.902); /*c1c1ce6*/
     --starwars--ff-heading1: 'Star Jedi', mono;
-    --starwars--ff-heading: 'Royal Acidbath', cursive;
+    --starwars--ff-heading: 'Star Jedi', mono;
     --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
     --starwars--ff-body:'Familjen Grotesk', sans;
     --starwars-ff-code:'Share Tech Mono', monospace;
@@ -352,7 +352,7 @@ background-color: var(--radio-color);
     --clr-heading1: var(--starwars--clr-yellow);
     --clr-heading: var(--starwars--clr-yellow);
     --clr-tagline: var(--starwars--clr-white);
-    --clr-text: hsl(109 50% 15%);
+    --clr-text: var(--starwars--clr-white);
     --clr-link: var(--clr-test-lime);
 
     --ff-heading1: var(--starwars--ff-heading1);
@@ -366,6 +366,8 @@ background-color: var(--radio-color);
     --clr-card-bg: var(--starwars--clr-black);
     --clr-text: var(--starwars--clr-white);
     --clr-heading: var(--starwars--clr-yellow);
+
+    --ff-heading: var(--starwars--ff-heading);
 }
 
 .elegant {
