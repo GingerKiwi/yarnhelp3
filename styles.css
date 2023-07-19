@@ -1,13 +1,27 @@
 @font-face {
     font-family: 'Royal Acidbath';
-    src: url(/assets/fonts/royal_acidbath/Royalacid_o.ttf);
+        src: 
+        local('Royal Acidbath'),
+        url(/assets/fonts/royal_acidbath/Royalacid_o.ttf) format('truetype');
 
     font-family: 'Royal Acid';
-    src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
+        src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
 
     font-family: 'Star Jedi';
-    src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
+        src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
+
 }
+
+/* https://github.com/madcampos/madcampos.github.io/blob/main/src/css/fonts.css
+@font-face {
+	font-family: 'Cascadia Code';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('./fonts/CascadiaCodePL.woff2') format('woff2');
+	font-variant-alternates: styleset('ss01') styleset('ss02') styleset('ss03') styleset('ss19') styleset('ss20');
+	font-variant-ligatures: common-ligatures contextual;
+} */
 
 :root {
     /* Test colours */
@@ -19,7 +33,57 @@
     --ff-test-heading: 'Audiowide', cursive;
     --ff-test-body: 'Send Flowers', cursive;
 
-    /* Default Light Grey Theme */
+    /* Default Theme */
+    --clr-body-bg: var(--groovy--clr-orange); 
+    --clr-card-bg: var(--groovy--clr-white);
+    --hero-inner--title-bg-clr: var(--groovy--clr-orange);
+    --hero-inner-title-border-clr: var(--groovy--clr-pink);
+    --hero-inner-bg: var(--groovy--clr-grey-light);
+
+    --clr-text: var(--groovy--clr-black);
+    --clr-heading1: var(--groovy--clr-white);
+    --clr-heading: var(--groovy--clr-pink);
+    --clr-tagline: var(--groovy--clr-black);
+    --clr-card-top: var(--groovy--clr-pink);
+    --clr-link: var(--clr-test-blue);
+    --clr-link-focus: var(--clr-test-red);
+
+    --ff-code: var(--groovy--ff-code);
+    --ff-heading1: var(--groovy--ff-heading1);
+    --ff-heading: var(--groovy--ff-heading);
+    --ff-tagline: var(--groovy--ff-tagline);
+    --ff-body: var(--groovy--ff-body);
+
+    /* Groovy Theme */
+    --groovy--clr-orange: hsl(29, 96%, 44%); /*DD6D05*/
+    --groovy--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
+    --groovy--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
+    --groovy--clr-grey-light: hsla(0, 4%, 81%, .9); /*D1CDCD*/
+    --groovy--clr-black:hsl(0, 0%, 0%); /*000000*/
+    --groovy--ff-heading1: 'Royal Acidbath', cursive;
+    --groovy--ff-heading: 'Royal Acidbath', cursive;
+    --groovy--ff-tagline: 'Royal Acid', cursive;
+    --groovy--ff-body:'Familjen Grotesk', sans;
+    --groovy--ff-code:'Ubuntu Mono', monospace;
+
+    /* Starwars Dark Theme */
+    --starwars--clr-yellow: hsl(54, 100%, 56%); /*ffe81f*/
+    --starwars--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
+    --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
+    --starwars--clr-black:hsla(0, 0%, 11%, 0.902); /*c1c1ce6*/
+    --starwars--ff-heading1: 'Star Jedi', mono;
+    --starwars--ff-heading: 'Royal Acidbath', cursive;
+    --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
+    --starwars--ff-body:'Familjen Grotesk', sans;
+    --starwars-ff-code:'Share Tech Mono', monospace;
+
+    /* Elegant Theme */
+    --elegant--clr-snow: hsl(330, 6%, 93%); /*#EFEDEE*/
+    --elegant--clr-wheat: hsl(30, 76%, 34%); /*#9a5815*/
+    --elegant--clr-forest: hsl(95, 15%, 16%); /*#272E22*/
+    --elegant--clr-charcoal: hsl(33, 20%, 11%); /*#211C16*/
+    
+    /* Grey theme
     --clr-body-bg: hsl(0 0% 90%); 
     --clr-card-bg: hsl(0 0% 100%);
     --hero-inner--title-bg-clr: var(--clr-test-blue);
@@ -32,40 +96,7 @@
     --clr-tagline: var(--clr-test-blue);
     --clr-card-top: hsl(0 0% 25%);
     --clr-link: hsl(0 0% 25%);
-    --clr-link-focus: hsl(0, 0%, 10%);
-
-    --ff-code: 'Ubuntu Mono', monospace;
-    --ff-heading: 'Audiowide', cursive;
-    --ff-tagline: 'Arial', sans;
-    --ff-body: 'Send Flowers', cursive;
-
-    /* Groovy Theme */
-    --groovy--clr-orange: hsl(29, 96%, 44%); /*DD6D05*/
-    --groovy--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
-    --groovy--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
-    --groovy--clr-grey-light: hsl(0, 4%, 81%); /*D1CDCD*/
-    --groovy--clr-black:var(hsl(0, 0%, 0%)); /*000000*/
-    --groovy--ff-heading1: 'Royal Acidbath', cursive;
-    --groovy--ff-heading: 'Royal Acidbath', cursive;
-    --groovy--ff-tagline: 'Royal Acid', cursive;
-    --groovy--ff-body:'Familjen Grotesk', sans;
-
-    /* Starwars Dark Theme */
-    --starwars--clr-yellow: hsl(54, 100%, 56%); /*ffe81f*/
-    --starwars--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
-    --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
-    --starwars--clr-black:var(hsla(0, 0%, 11%, 0.902)); /*c1c1ce6*/
-    --starwars--ff-heading1: 'Star Jedi', mono;
-    --starwars--ff-heading: 'Royal Acidbath', cursive;
-    --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
-    --starwars--ff-body:'Familjen Grotesk', sans;
-
-    /* Elegant Theme */
-    --elegant--clr-snow: hsl(330, 6%, 93%); /*#EFEDEE*/
-    --elegant--clr-wheat: hsl(30, 76%, 34%); /*#9a5815*/
-    --elegant--clr-forest: hsl(95, 15%, 16%); /*#272E22*/
-    --elegant--clr-charcoal: hsl(33, 20%, 11%); /*#211C16*/
-    
+    --clr-link-focus: hsl(0, 0%, 10%); */
 }
 
 /* ------------------ */
@@ -97,11 +128,12 @@ h3 {
 
 blockquote {
     color: var(--ff-code);
+    font-family: var(--ff-code);
     font-style: italic;
     background-color: var(--clr-card-bg);
     padding: 1rem;
     border-radius: 1.25rem;
-    border: 8px solid #B1038B;
+    border: 8px solid var(--clr-card-top);
 }
 
 .tagline {
@@ -117,11 +149,11 @@ a {
 }
 
 a:focus, a:hover {
-    color: var(--clr-test-lime);
+    color: var(--clr-link-focus);
 }
 
 a:active {
-    color: var(--clr-test-yellow);
+    color: var(--clr-link-focus);
 }
 
 .card--content {
@@ -161,7 +193,7 @@ margin-inline: auto;
     text-align: center;
 
     /* Background styles */
-    background-image: url(/assets/hero--mobile.jpg);
+    background-image: url(/assets/hero--cropped-square.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
