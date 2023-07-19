@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'Royal Acidbath';
-    src: url(/assets/fonts/royal_acidbath/Royalacid_o.ttf);
+        src: 
+        local('Royal Acidbath'),
+        url(/assets/fonts/royal_acidbath/Royalacid_o.ttf) format('opentype'),;
 
     font-family: 'Royal Acid';
-    src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
+        src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
 
     font-family: 'Star Jedi';
-    src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
+        src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
 }
 
 :root {
