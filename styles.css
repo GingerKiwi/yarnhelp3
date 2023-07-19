@@ -82,6 +82,8 @@
     --elegant--clr-wheat: hsl(30, 76%, 34%); /*#9a5815*/
     --elegant--clr-forest: hsl(95, 15%, 16%); /*#272E22*/
     --elegant--clr-charcoal: hsl(33, 20%, 11%); /*#211C16*/
+    --elegant--ff-serif: 'Playfair Display', serif;
+    --elegant--ff-sans: 'Inter', sans-serif;
     
     /* Grey theme
     --clr-body-bg: hsl(0 0% 90%); 
@@ -361,6 +363,27 @@ background-color: var(--radio-color);
     --ff-body: var(--starwars--ff-body);
 }
 
+.elegant {
+    --clr-body-bg: var(--groovy--clr-grey-light);
+    --clr-card-bg: var(--elegant--clr-snow);
+    --clr-card-top: var(--elegant--clr-wheat);
+
+    --hero-inner--title-bg-clr: var(--groovy--clr-grey-light);
+    --hero-inner-title-border-clr: var(--elegant--clr-wheat);
+    --hero-inner-bg: var(--elegant--clr-snow);
+
+    --clr-heading1: var(--elegant--clr-wheat);
+    --clr-heading: var(--elegant--clr-charcoal);
+    --clr-tagline: var(--elegant--clr-charcoal);
+    --clr-text: var(--elegant--clr-charcoal);
+    --clr-link: var(--elegant--clr-wheat);
+
+    --ff-heading1: var(--elegant--ff-serif);
+    --ff-heading: var(--elegant--ff-all);
+    --ff-tagline: var(--elegant--ff-all);
+    --ff-body: var(--elegant--ff-all);
+}
+
 :root:has(#starwars-dark:checked) {
     --clr-body-bg: var(--starwars--clr-black);
     --clr-card-bg: var(--starwars--clr-black);
@@ -370,20 +393,11 @@ background-color: var(--radio-color);
     --ff-heading: var(--starwars--ff-heading);
 }
 
-.elegant {
-    --clr-card-bg: hsl(0, 0%, 100%);
-    --clr-body-bg: hsl(0, 0%, 94%);
-    --clr-text: hsl(95, 15%, 16%);
-    --clr-card-top:var(--wheat);
-    --clr-heading: var(--wheat);
-    --clr-link: var(--wheat);
-}
-
 :root:has(#elegant:checked) {
     --clr-body-bg: hsl(0, 0%, 94%);
     --clr-card-bg: hsl(0, 0%, 100%);
     --clr-text: hsl(95, 15%, 16%);
-    --clr-heading: var(--wheat);
+    --clr-heading: var(--elegant--clr-wheat);
 }
 
 /* EXAMPLE
