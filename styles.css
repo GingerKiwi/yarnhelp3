@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Royal Acidbath';
+    /* font-family: 'Royal Acidbath';
         src: 
         local('Royal Acidbath'),
         url(/assets/fonts/royal_acidbath/Royalacid_o.ttf) format('truetype');
 
     font-family: 'Royal Acid';
-        src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
+        src: url(/assets//fonts/royal_acidbath/Royalacid.ttf); */
 
     font-family: 'Star Jedi';
         src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
@@ -24,7 +24,7 @@
 } */
 
 :root {
-    /* Test colours */
+    /* Test / Dev  - will not be in final app's UI*/
     
     --clr-test-red: red;
     --clr-test-lime: hsl(104, 76%, 47%);
@@ -33,7 +33,15 @@
     --ff-test-heading: 'Audiowide', cursive;
     --ff-test-body: 'Send Flowers', cursive;
 
+    /* Background Image Options */
+    --bg-img-regular: url(/assets/hero--cropped-square.png) filter(greyscale(0%));
+    --bg-img-greyscale: url(/assets/hero--cropped-square.png) filter(greyscale(60%));
+
+    /* Utility */
+    --line-height--default: 1.5;
+
     /* Default Theme */
+    --color-picker--bg: var(--groovy--clr-grey-light);
     --clr-body-bg: var(--groovy--clr-orange); 
     --clr-card-bg: var(--groovy--clr-white);
     --hero-inner--title-bg-clr: var(--groovy--clr-orange);
@@ -53,6 +61,7 @@
     --ff-heading: var(--groovy--ff-heading);
     --ff-tagline: var(--groovy--ff-tagline);
     --ff-body: var(--groovy--ff-body);
+    --line-height: var(--line-height--default);
 
     /* Groovy Theme */
     --groovy--clr-orange: hsl(29, 96%, 44%); /*DD6D05*/
@@ -60,9 +69,9 @@
     --groovy--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
     --groovy--clr-grey-light: hsla(0, 4%, 81%, .9); /*D1CDCD*/
     --groovy--clr-black:hsl(0, 0%, 0%); /*000000*/
-    --groovy--ff-heading1: 'Royal Acidbath', cursive;
-    --groovy--ff-heading: 'Royal Acidbath', cursive;
-    --groovy--ff-tagline: 'Royal Acid', cursive;
+    --groovy--ff-heading1: 'Chicle', cursive;
+    --groovy--ff-heading: 'Chicle', cursive;
+    --groovy--ff-tagline: 'Chicle', cursive;
     --groovy--ff-body:'Familjen Grotesk', sans;
     --groovy--ff-code:'Ubuntu Mono', monospace;
 
@@ -70,6 +79,7 @@
     --starwars--clr-yellow: hsl(54, 100%, 56%); /*ffe81f*/
     --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
     --starwars--clr-black:hsla(0, 0%, 11%, 0.902); /*c1c1ce6*/
+    --starwars-clr-blue: hsl(223, 94%, 58%); /*#2E67F8*/
     --starwars--ff-heading1: 'Star Jedi', mono;
     --starwars--ff-heading: 'Star Jedi', mono;
     --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
@@ -83,6 +93,20 @@
     --elegant--clr-charcoal: hsl(33, 20%, 11%); /*#211C16*/
     --elegant--ff-serif: 'Playfair Display', serif;
     --elegant--ff-sans: 'Inter', sans-serif;
+
+    /* Simple Dark - Dylslexia Friendly Theme */
+    --simple-dark--clr-black: hsl(0, 0%, 11%); /*1d1d1d*/
+    --simple-dark--clr-grey: hsl(0, 0%, 50%); /*808080*/
+    --simple-dark--clr-white: hsl(0, 11%, 91%); /*FFFFFF*/
+    --simple-dark--clr-grey-platium:hsl(40, 5%, 89%); /*E5E4E2*/
+    --simple-dark--clr-grey-charcoal: hsl(204, 19%, 26%); /*#36454F*/
+    --simple-dark--clr-blue-light: hsl(204, 86%, 37%); /*#36454F*/
+    --simple-dark--ff-heading1: 'Arial black', sans-serif;
+    --simple-dark--ff-heading: 'Arial', sans-serif;
+    --simple-dark--ff-tagline: 'Arial', sans-serif;
+    --simple-dark--ff-body:'Arial', sans-serif;
+    --simple-dark-ff-code:'Courier New', monospace;
+    --simple-dark--line-height: 2.5rem;
     
     /* Grey theme
     --clr-body-bg: hsl(0 0% 90%); 
@@ -108,7 +132,7 @@ body {
     margin: 0;
     font-family: var(--ff-body);
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: var(--line-height);
     background: var(--clr-body-bg);
     color: var(--clr-text);
 }
@@ -195,6 +219,7 @@ margin-inline: auto;
 
     /* Background styles */
     background-image: url(/assets/hero--cropped-square.png);
+    /* filter: grayscale(100%); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -224,11 +249,26 @@ margin-inline: auto;
 }
 
 
-.btn {
+button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border: 2px solid var(--clr-test-red);
+    border: 3px solid var(--clr-card-top);
+    background-color: var(--clr-card-bg);
+    color: var(--clr-card-top);
     border-radius: 10px;
+}
+
+button:active {
+    border: 6px solid var(--clr-card-bg);
+    background-color: var(--clr-card-top);
+    color: var(--clr-card-bg);
+}
+
+button:focus, button:hover {
+    border: 3px solid var(--clr-card-bg);
+    background-color: var(--clr-card-top);
+    color: var(--clr-card-bg);
+    transition: all .3s;
 }
 
 .card {
@@ -265,6 +305,22 @@ margin-bottom: 0.75rem;
     padding-top: 2rem;
 }
 
+.clr--heading {
+    color: var(--clr-heading);
+}
+
+.align--center {
+    text-align: center;
+}
+
+.width--max-85vw {
+    max-width: 85vw;
+}
+
+.margin--1rem {
+    margin: 1rem;
+}
+
 /* ---------------------------- */
 /* --- COLOUR THEME PICKER ---  */
 /* ---------------------------- */
@@ -286,7 +342,7 @@ display: flex;
 gap: 2rem;
 width: -moz-fit-content;
 width: fit-content;
-background: #fff;
+background: var(--color-picker--bg);
 padding: 1rem 3rem;
 margin-inline: auto;
 border-radius: 0 0 1rem 1rem;
@@ -334,6 +390,7 @@ background-color: var(--radio-color);
     --clr-tagline: var(--groovy--clr-black);
     --clr-text: hsl(95, 15%, 16%);
     --clr-link: var(--groovy--clr-pink);
+    --clr-link-focus: var(--groovy--clr-orange);
 
     --ff-heading1: var(--groovy--ff-heading1);
     --ff-heading: var(--groovy--ff-heading);
@@ -342,7 +399,8 @@ background-color: var(--radio-color);
 }
 
 .starwars-dark {
-    --clr-body-bg: var(--starwars--clr-black-almost);
+    --color-picker--bg: var(--starwars--clr-black);
+    --clr-body-bg: var(--starwars--clr-black);
     --clr-card-bg: var(--starwars--clr-black);
     --clr-card-top: var(--starwars--clr-yellow);
 
@@ -354,7 +412,7 @@ background-color: var(--radio-color);
     --clr-heading: var(--starwars--clr-yellow);
     --clr-tagline: var(--starwars--clr-white);
     --clr-text: var(--starwars--clr-white);
-    --clr-link: var(--clr-test-lime);
+    --clr-link: var(--starwars-clr-blue);
 
     --ff-heading1: var(--starwars--ff-heading1);
     --ff-heading: var(--starwars--ff-heading);
@@ -383,13 +441,45 @@ background-color: var(--radio-color);
     --ff-body: var(--elegant--ff-all);
 }
 
+.simple-dark {
+    --color-picker--bg: var(--simple-dark--clr-grey-platium);
+    --clr-body-bg: var(--simple-dark--clr-black);
+    --clr-card-bg: var(--simple-dark--clr-grey-charcoal);
+    --clr-card-top: var(--simple-dark--clr-grey-platium);
+
+    --hero-inner--title-bg-clr: var(--simple-dark--clr-black);
+    --hero-inner-title-border-clr: var(--simple-dark--clr-grey);
+    --hero-inner-bg: var(--simple-dark--clr-black);
+
+    --clr-heading1: var(--simple-dark--clr-grey-platium);
+    --clr-heading: var(--simple-dark--clr-white);
+    --clr-tagline: var(--simple-dark--clr-white);
+    --clr-text: var(--simple-dark--clr-white);
+    --clr-link: var(--simple-dark--clr-blue-light);
+
+    --ff-heading1: var(--simple-dark--ff-heading1);
+    --ff-heading: var(--simple-dark--ff-heading);
+    --ff-tagline: var(--simple-dark--ff-tagline);
+    --ff-body: var(--simple-dark--ff-body);
+    --line-height: var(--simple-dark--line-height);
+}
+
 :root:has(#starwars-dark:checked) {
+    --clr-body-bg: var(--simple-dark--clr-black);
+    --clr-card-bg: var(--simple-dark-clr-grey-charcoal);
+    --clr-text: var(--simple-dark--clr-grey-platium);
+    --clr-heading: var(--starwars--clr-yellow);
+
+    --ff-heading: var(--simple-dark--ff-heading);
+}
+
+:root:has(#simple-dark:checked) {
     --clr-body-bg: var(--starwars--clr-black);
     --clr-card-bg: var(--starwars--clr-black);
     --clr-text: var(--starwars--clr-white);
-    --clr-heading: var(--starwars--clr-yellow);
+    --clr-heading: var(--simple-dark--clr-white);
 
-    --ff-heading: var(--starwars--ff-heading);
+    --ff-heading: var(--simple-dark--ff-heading);
 }
 
 :root:has(#elegant:checked) {
