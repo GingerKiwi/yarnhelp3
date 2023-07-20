@@ -24,7 +24,7 @@
 } */
 
 :root {
-    /* Test / Dev */
+    /* Test / Dev  - will not be in final app's UI*/
     
     --clr-test-red: red;
     --clr-test-lime: hsl(104, 76%, 47%);
@@ -70,7 +70,6 @@
     --groovy--clr-grey-light: hsla(0, 4%, 81%, .9); /*D1CDCD*/
     --groovy--clr-black:hsl(0, 0%, 0%); /*000000*/
     --groovy--ff-heading1: 'Chicle', cursive;
-    /* --groovy--ff-heading1: 'Royal Acidbath', 'Chicle', cursive; */
     --groovy--ff-heading: 'Chicle', cursive;
     --groovy--ff-tagline: 'Chicle', cursive;
     --groovy--ff-body:'Familjen Grotesk', sans;
@@ -81,7 +80,7 @@
     --starwars--clr-pink: hsl(313, 97%, 35%); /*B1038B*/
     --starwars--clr-white: hsl(0, 0%, 100%); /*FFFFFF*/
     --starwars--clr-black:hsla(0, 0%, 11%, 0.902); /*c1c1ce6*/
-    --starwars-clr-blue: #2E67F8; /*#00A3FF*/
+    --starwars-clr-blue: hsl(223, 94%, 58%); /*#2E67F8*/
     --starwars--ff-heading1: 'Star Jedi', mono;
     --starwars--ff-heading: 'Star Jedi', mono;
     --starwars--ff-tagline: 'Alegreya Sans', sans-serif;
@@ -392,6 +391,7 @@ background-color: var(--radio-color);
     --clr-tagline: var(--groovy--clr-black);
     --clr-text: hsl(95, 15%, 16%);
     --clr-link: var(--groovy--clr-pink);
+    --clr-link-focus: var(--groovy--clr-orange);
 
     --ff-heading1: var(--groovy--ff-heading1);
     --ff-heading: var(--groovy--ff-heading);
