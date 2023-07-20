@@ -274,6 +274,22 @@ margin-bottom: 0.75rem;
     padding-top: 2rem;
 }
 
+.clr--heading {
+    color: var(--clr-heading);
+}
+
+.align--center {
+    text-align: center;
+}
+
+.width--max-85vw {
+    max-width: 85vw;
+}
+
+.margin--1rem {
+    margin: 1rem;
+}
+
 /* ---------------------------- */
 /* --- COLOUR THEME PICKER ---  */
 /* ---------------------------- */
