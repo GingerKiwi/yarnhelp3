@@ -37,6 +37,9 @@
     --bg-img-regular: url(/assets/hero--cropped-square.png) filter(greyscale(0%));
     --bg-img-greyscale: url(/assets/hero--cropped-square.png) filter(greyscale(60%));
 
+    /* Utility */
+    --line-height--default: 1.5;
+
     /* Default Theme */
     --color-picker--bg: var(--groovy--clr-grey-light);
     --clr-body-bg: var(--groovy--clr-orange); 
@@ -58,6 +61,7 @@
     --ff-heading: var(--groovy--ff-heading);
     --ff-tagline: var(--groovy--ff-tagline);
     --ff-body: var(--groovy--ff-body);
+    --line-height: var(--line-height--default);
 
     /* Groovy Theme */
     --groovy--clr-orange: hsl(29, 96%, 44%); /*DD6D05*/
@@ -91,6 +95,20 @@
     --elegant--clr-charcoal: hsl(33, 20%, 11%); /*#211C16*/
     --elegant--ff-serif: 'Playfair Display', serif;
     --elegant--ff-sans: 'Inter', sans-serif;
+
+    /* Simple Dark - Dylslexia Friendly Theme */
+    --simple-dark--clr-black: hsl(0, 0%, 11%); /*1d1d1d*/
+    --simple-dark--clr-grey: hsl(0, 0%, 50%); /*808080*/
+    --simple-dark--clr-white: hsl(0, 11%, 91%); /*FFFFFF*/
+    --simple-dark--clr-grey-platium:hsl(40, 5%, 89%); /*E5E4E2*/
+    --simple-dark--clr-grey-charcoal: hsl(204, 19%, 26%); /*#36454F*/
+    --simple-dark--clr-blue-light: hsl(204, 86%, 37%); /*#36454F*/
+    --simple-dark--ff-heading1: 'Arial black', sans-serif;
+    --simple-dark--ff-heading: 'Arial', sans-serif;
+    --simple-dark--ff-tagline: 'Arial', sans-serif;
+    --simple-dark--ff-body:'Arial', sans-serif;
+    --simple-dark-ff-code:'Courier New', monospace;
+    --simple-dark--line-height: 2.5rem;
     
     /* Grey theme
     --clr-body-bg: hsl(0 0% 90%); 
@@ -116,7 +134,7 @@ body {
     margin: 0;
     font-family: var(--ff-body);
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: var(--line-height);
     background: var(--clr-body-bg);
     color: var(--clr-text);
 }
@@ -424,13 +442,45 @@ background-color: var(--radio-color);
     --ff-body: var(--elegant--ff-all);
 }
 
+.simple-dark {
+    --color-picker--bg: var(--simple-dark--clr-grey-platium);
+    --clr-body-bg: var(--simple-dark--clr-black);
+    --clr-card-bg: var(--simple-dark--clr-grey-charcoal);
+    --clr-card-top: var(--simple-dark--clr-grey-platium);
+
+    --hero-inner--title-bg-clr: var(--simple-dark--clr-black);
+    --hero-inner-title-border-clr: var(--simple-dark--clr-grey);
+    --hero-inner-bg: var(--simple-dark--clr-black);
+
+    --clr-heading1: var(--simple-dark--clr-grey-platium);
+    --clr-heading: var(--simple-dark--clr-white);
+    --clr-tagline: var(--simple-dark--clr-white);
+    --clr-text: var(--simple-dark--clr-white);
+    --clr-link: var(--simple-dark--clr-blue-light);
+
+    --ff-heading1: var(--simple-dark--ff-heading1);
+    --ff-heading: var(--simple-dark--ff-heading);
+    --ff-tagline: var(--simple-dark--ff-tagline);
+    --ff-body: var(--simple-dark--ff-body);
+    --line-height: var(--simple-dark--line-height);
+}
+
 :root:has(#starwars-dark:checked) {
+    --clr-body-bg: var(--simple-dark--clr-black);
+    --clr-card-bg: var(--simple-dark-clr-grey-charcoal);
+    --clr-text: var(--simple-dark--clr-grey-platium);
+    --clr-heading: var(--starwars--clr-yellow);
+
+    --ff-heading: var(--simple-dark--ff-heading);
+}
+
+:root:has(#simple-dark:checked) {
     --clr-body-bg: var(--starwars--clr-black);
     --clr-card-bg: var(--starwars--clr-black);
     --clr-text: var(--starwars--clr-white);
-    --clr-heading: var(--starwars--clr-yellow);
+    --clr-heading: var(--simple-dark--clr-white);
 
-    --ff-heading: var(--starwars--ff-heading);
+    --ff-heading: var(--simple-dark--ff-heading);
 }
 
 :root:has(#elegant:checked) {
