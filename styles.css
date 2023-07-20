@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Royal Acidbath';
+    /* font-family: 'Royal Acidbath';
         src: 
         local('Royal Acidbath'),
         url(/assets/fonts/royal_acidbath/Royalacid_o.ttf) format('truetype');
 
     font-family: 'Royal Acid';
-        src: url(/assets//fonts/royal_acidbath/Royalacid.ttf);
+        src: url(/assets//fonts/royal_acidbath/Royalacid.ttf); */
 
     font-family: 'Star Jedi';
         src: url(/assets/fonts/star_jedi/starjedi/Starjedi.ttf);
@@ -233,11 +233,26 @@ margin-inline: auto;
 }
 
 
-.btn {
+button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border: 2px solid var(--clr-test-red);
+    border: 3px solid var(--clr-card-top);
+    background-color: var(--clr-card-bg);
+    color: var(--clr-card-top);
     border-radius: 10px;
+}
+
+button:active {
+    border: 6px solid var(--clr-card-bg);
+    background-color: var(--clr-card-top);
+    color: var(--clr-card-bg);
+}
+
+button:focus, button:hover {
+    border: 3px solid var(--clr-card-bg);
+    background-color: var(--clr-card-top);
+    color: var(--clr-card-bg);
+    transition: all .3s;
 }
 
 .card {
