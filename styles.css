@@ -299,6 +299,10 @@ margin-bottom: 0.75rem;
     margin-bottom: 1rem;
 }
 
+.margin--sides-2rem {
+    margin: 2rem;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
