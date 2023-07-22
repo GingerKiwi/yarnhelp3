@@ -42,8 +42,8 @@
     --clr-heading: var(--groovy--clr-pink);
     --clr-tagline: var(--groovy--clr-black);
     --clr-card-top: var(--groovy--clr-pink);
-    --clr-link: var(--clr-test-blue);
-    --clr-link-focus: var(--clr-test-red);
+    --clr-link: var(--groovy--clr-orange);
+    --clr-link-focus: var(--groovy--clr-pink);
 
     --ff-code: var(--groovy--ff-code);
     --ff-heading1: var(--groovy--ff-heading1);
@@ -482,25 +482,6 @@ background-color: var(--radio-color);
     --clr-heading: var(--elegant--clr-wheat);
 }
 
-/* EXAMPLE
-.green {
-    --clr-body-bg: hsl(109 50% 90%);
-    --clr-card-bg: hsl(109 50% 100%);
-    --clr-text: hsl(109 50% 15%);
-    --clr-card-top: hsl(109 50% 25%);
-    --clr-heading: hsl(109 50% 25%);
-    --clr-link: hsl(109, 50%, 25%);
-}
-
-:root:has(#green:checked) {
-    --clr-body-bg: hsl(109 50% 90%);
-    --clr-card-bg: hsl(109 50% 100%);
-    --clr-text: hsl(109 50% 15%);
-    --clr-heading: hsl(109 50% 25%);
-} */
-
-
-
 /* Nav */
 
 nav ul {
@@ -569,15 +550,15 @@ ul.nav .active a {
     color: blue;
 }
 
-ul.nav .hover a {
+ul.nav:hover a {
     font-weight: bold;
-    text-decoration: underline;
     color: green;
+    text-decoration: underline 1px var(--clr-card-top);
 }
 
-#nav-focus {
+/* #nav-focus {
     color: blueviolet;
-}
+} */
 
 /* MEDIA QUERIES */
 
