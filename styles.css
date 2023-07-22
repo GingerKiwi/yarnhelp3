@@ -12,17 +12,6 @@
 
 }
 
-/* https://github.com/madcampos/madcampos.github.io/blob/main/src/css/fonts.css
-@font-face {
-	font-family: 'Cascadia Code';
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url('./fonts/CascadiaCodePL.woff2') format('woff2');
-	font-variant-alternates: styleset('ss01') styleset('ss02') styleset('ss03') styleset('ss19') styleset('ss20');
-	font-variant-ligatures: common-ligatures contextual;
-} */
-
 :root {
     /* Test / Dev  - will not be in final app's UI*/
     
@@ -107,21 +96,6 @@
     --simple-dark--ff-body:'Arial', sans-serif;
     --simple-dark-ff-code:'Courier New', monospace;
     --simple-dark--line-height: 2.5rem;
-    
-    /* Grey theme
-    --clr-body-bg: hsl(0 0% 90%); 
-    --clr-card-bg: hsl(0 0% 100%);
-    --hero-inner--title-bg-clr: var(--clr-test-blue);
-    --hero-inner-title-border-clr: var(--clr-test-red);
-    --hero-inner-bg: var(--clr-test-yellow);
-
-    --clr-text: hsl(0 0% 15%);
-    --clr-heading1: hsl(0 0% 25%);
-    --clr-heading: hsl(0 0% 25%);
-    --clr-tagline: var(--clr-test-blue);
-    --clr-card-top: hsl(0 0% 25%);
-    --clr-link: hsl(0 0% 25%);
-    --clr-link-focus: hsl(0, 0%, 10%); */
 }
 
 /* ------------------ */
@@ -319,6 +293,14 @@ margin-bottom: 0.75rem;
 
 .margin--1rem {
     margin: 1rem;
+}
+
+.margin--bottom-1rem {
+    margin-bottom: 1rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 
