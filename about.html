@@ -5,60 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Audiowide&family=Chicle&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter&family=Playfair+Display:wght@400;500&family=Send+Flowers&family=Share+Tech+Mono&family=Ubuntu+Mono:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Audiowide&family=Chicle&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter&family=Playfair+Display:wght@400;500&family=Send+Flowers&family=Share+Tech+Mono&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
-    <title>Yarn Help!</title>
+    <title>Doctor Who Scarf</title>
   </head>
-  <header>
+
     <!-- A11Y - ADD SKIP TO MAIN CONTENT! -->
     <form class="color-picker" action="">
-        <fieldset>
-            <legend class="visually-hidden">Pick a color scheme</legend>
-            
-            <label for="groovy" class="visually-hidden">Groovy Theme</label>
-            <input type="radio" id="groovy" name="theme" checked />
-    
-            <label for="starwars-dark" class="visually-hidden">Starwars Dark Theme</label>
-            <input type="radio" name="theme" id="starwars-dark" />
-    
-            <label for="elegant" class="visually-hidden">Elegant Theme</label>
-            <input type="radio" id="elegant" name="theme" />
-    
-            <label for="simple-dark" class="visually-hidden">Simple Dark Dyslexia Friendly Theme</label>
-            <input type="radio" id="simple-dark" name="theme" />
-    
-          </fieldset>
+      <fieldset>
+        <legend class="visually-hidden">Pick a color scheme</legend>
+        
+        <label for="groovy" class="visually-hidden">Groovy Theme</label>
+        <input type="radio" id="groovy" name="theme" checked />
+
+        <label for="starwars-dark" class="visually-hidden">Starwars Dark Theme</label>
+        <input type="radio" name="theme" id="starwars-dark" />
+
+        <label for="elegant" class="visually-hidden">Elegant Theme</label>
+        <input type="radio" id="elegant" name="theme" />
+
+        <label for="simple-dark" class="visually-hidden">Simple Dark Dyslexia Friendly Theme</label>
+        <input type="radio" id="simple-dark" name="theme" />
+
+      </fieldset>
     </form>
     <nav>
-      <img src="assets/menu.svg" class="menu" id="menu-btn" alt="open menu" />
+      <img
+      src="assets/menu.svg"
+      class="menu"
+      id="menu-btn"
+      alt="open menu"
+    />
       <ul class="nav" id="nav">
-        <li class="exit" id="/assets/exit-btn">
-          <img
+          <li class="exit" id="/assets/exit-btn">
+            <img
             src="assets/exit.svg"
             class="menu"
             id="exit-btn"
             alt="close menu"
-          />
-        </li>
-        <li class="active"><a href="index.html">Home</a></li>
+            />
+          </li>
+          <li class="active"><a href="index.html">Home</a></li>
         <li><a href="howmuchyarn.html">How Much Yarn?</a></li>
         <li><a href="doctorwho.html">Doctor Who Scarf</a></li>
-        <li>
-          <a href="craftingandcode.html"
-            >Crafting and Code Coffee Chats and Discord
-          </a>
-        </li>
+        <li><a href="craftingandcode.html">Crafting and Code Coffee Chats and Discord </a>
         <li><a href="about.html">About and Contact</a></li>
         <!-- <li><a href="index01.html">Old Site Version 1.0</a></li> -->
       </ul>
     </nav>
-  </header>
+    
+    
+  
+    <main>
+    <div class="wrapper"></div>
+      <section class="card--content width--max-85vw margin--1rem">
+        <h1 class="clr--heading align--center">About This Site</h1>
+          <p>The idea for Yarn Help! started in early 2022 when Liz was recoding a metric conversion app from a Brad Traversy codepen to include some accessibilty features. She realized that with some tweaks it could be adapted to answer a question she's often asked "How many balls of yarn should someone buy for a gift or to make a particular type of project."  </p>
+          <p>As a hobbist knitwear designer, Liz often has to calculate how many balls of particular yarn she needs to make a project with a custom pattern. So it's useful for experienced knitters and crocheters as well as those wanting to gift yarn. </p>
+          <h2>Version 1 and 2</h2>
+          In fall, 2022 she combined that logic with a metric convertor design from Scrimba to make version 1.0. Finally on March 17, 2023, Liz built out that logic into a mulitpage, mobile first design that calculated the number of balls of yarn needed for both knitting and crocheting multiple different projects including 6 different sizes of sweaters, and multiple sizes of scarfs and blankets using worsted (medium) weight (thickness) yarn.
+            
+        </section>
+        <section class="card--content width--max-85vw margin--1rem">
+            <h2>About the Developer</h2>
+            <p>Elizabeth (Liz) McCready is a frontend developer based in Toronto, Ontario. She's been knitting since her Nana taught her when she was six. Liz is active in the local and international developer community including with: Toronto Javascript, Women Who Code, Refactor, and James Q. Quick's "Learn, Build, Teach" discord. She has three rescue cats.</p>
+        </section>
+        <section class="card--content width--max-85vw margin--1rem">
+            <h2>Contact</h2> 
+            <p><a href="https://www.linkedin.com/in/elizabethmccready/">LinkedIn</a></p>
+            <p><a href="https://github.com/GingerKiwi/yarnhelp3">GitHub Repo for this site</a></p>
+        </section>
+
+   
+    </div>
+
+
 </main>
 <script src="/app.js"></script>
 <script src="/nav.js"></script>
