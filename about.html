@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Audiowide&family=Chicle&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter&family=Playfair+Display:wght@400;500&family=Send+Flowers&family=Share+Tech+Mono&family=Ubuntu+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yarn Help!</title>
+  </head>
+  <header>
+    <!-- A11Y - ADD SKIP TO MAIN CONTENT! -->
+    <form class="color-picker" action="">
+        <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+            
+            <label for="groovy" class="visually-hidden">Groovy Theme</label>
+            <input type="radio" id="groovy" name="theme" checked />
+    
+            <label for="starwars-dark" class="visually-hidden">Starwars Dark Theme</label>
+            <input type="radio" name="theme" id="starwars-dark" />
+    
+            <label for="elegant" class="visually-hidden">Elegant Theme</label>
+            <input type="radio" id="elegant" name="theme" />
+    
+            <label for="simple-dark" class="visually-hidden">Simple Dark Dyslexia Friendly Theme</label>
+            <input type="radio" id="simple-dark" name="theme" />
+    
+          </fieldset>
+    </form>
+    <nav>
+      <img src="assets/menu.svg" class="menu" id="menu-btn" alt="open menu" />
+      <ul class="nav" id="nav">
+        <li class="exit" id="/assets/exit-btn">
+          <img
+            src="assets/exit.svg"
+            class="menu"
+            id="exit-btn"
+            alt="close menu"
+          />
+        </li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="howmuchyarn.html">How Much Yarn?</a></li>
+        <li><a href="doctorwho.html">Doctor Who Scarf</a></li>
+        <li>
+          <a href="craftingandcode.html"
+            >Crafting and Code Coffee Chats and Discord
+          </a>
+        </li>
+        <li><a href="about.html">About and Contact</a></li>
+        <!-- <li><a href="index01.html">Old Site Version 1.0</a></li> -->
+      </ul>
+    </nav>
+  </header>
+</main>
+<script src="/app.js"></script>
+<script src="/nav.js"></script>
+</body>
+</html>
+

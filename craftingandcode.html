@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Audiowide&family=Chicle&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter&family=Playfair+Display:wght@400;500&family=Send+Flowers&family=Share+Tech+Mono&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" />
     <title>Yarn Help!</title>
   </head>
@@ -14,29 +19,48 @@
     <form class="color-picker" action="">
       <fieldset>
         <legend class="visually-hidden">Pick a color scheme</legend>
-        <label for="light" class="visually-hidden">Light</label>
-        <input type="radio" name="theme" id="light" checked />
+        
+        <label for="groovy" class="visually-hidden">Groovy Theme</label>
+        <input type="radio" id="groovy" name="theme" checked />
 
-        <label for="pink" class="visually-hidden">Pink theme</label>
-        <input type="radio" id="pink" name="theme" />
+        <label for="starwars-dark" class="visually-hidden">Starwars Dark Theme</label>
+        <input type="radio" name="theme" id="starwars-dark" />
 
-        <label for="blue" class="visually-hidden">Blue theme</label>
-        <input type="radio" id="blue" name="theme" />
+        <label for="elegant" class="visually-hidden">Elegant Theme</label>
+        <input type="radio" id="elegant" name="theme" />
 
-        <!-- <label for="green" class="visually-hidden">Green theme</label>
-        <input type="radio" id="green" name="theme" /> -->
+        <label for="simple-dark" class="visually-hidden">Simple Dark Dyslexia Friendly Theme</label>
+        <input type="radio" id="simple-dark" name="theme" />
 
-        <label for="dark" class="visually-hidden">Dark theme</label>
-        <input type="radio" id="dark" name="theme" />
-
-        <!-- <label for="test" class="visually-hidden">Test theme</label>
-        <input type="radio" id="test" name="theme" /> -->
       </fieldset>
     </form>
 
     <!-- ADD SKIP TO MAIN CONTENT! -->
-    <nav><a href="/index.html">HOME</a></nav>
-    <div class="hero">Hero with image and site title is going here.</div>
+    <nav>
+      <img
+      src="assets/menu.svg"
+      class="menu"
+      id="menu-btn"
+      alt="open menu"
+    />
+      <ul class="nav" id="nav">
+          <li class="exit" id="/assets/exit-btn">
+            <img
+            src="assets/exit.svg"
+            class="menu"
+            id="exit-btn"
+            alt="close menu"
+            />
+          </li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="howmuchyarn.html">How Much Yarn?</a></li>
+        <li><a href="doctorwho.html">Doctor Who Scarf</a></li>
+        <li><a href="craftingandcode.html">Crafting and Code Coffee Chats and Discord </a>
+        <li><a href="about.html">About and Contact</a></li>
+        <!-- <li><a href="index01.html">Old Site Version 1.0</a></li> -->
+      </ul>
+    </nav>
+    
   </header>
     <main>
       <div class="wrapper">
@@ -84,7 +108,7 @@
           <div class="card">
             <h3 class="card__title">What types of crafts count? Is it only knitting and crochet? </h3>
             <p>
-                Any kind of crafting is awesome!): knitting, crochet, weaving, cross stitch, woodworking,scrapbooking, sewing, drawing, or anything else crafty or artsy!
+                Any kind of crafting is awesome!): knitting, crochet, weaving, cross stitch, woodworking, scrapbooking, sewing, drawing, or anything else crafty or artsy!
             </p>
           </div>
           <div class="card">
@@ -139,4 +163,9 @@
     </main>
     <script src="/app.js"></script>
   </body>
+</main>
+<script src="/app.js"></script>
+<script src="/nav.js"></script>
+</body>
 </html>
+
