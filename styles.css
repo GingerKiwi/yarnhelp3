@@ -176,6 +176,17 @@ grid-template-columns: repeat(
 );
 }
 
+.auto-grid-how-much-yarn {
+    --min-column-size: 320px;
+    
+    display: grid;
+    gap: clamp(1rem, 5vmax, 1.625rem);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, var(--min-column-size)), 1fr)
+    );
+    }
+
 .wrapper {
 --max-width: 55rem;
 width: min(100% - 2rem, var(--max-width));
@@ -221,7 +232,6 @@ margin-inline: auto;
     border-radius: 1rem;
     border: 8px solid var(--hero-inner-title-border-clr);
 }
-
 
 button {
     display: inline-block;

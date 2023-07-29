@@ -1,7 +1,7 @@
 /**
  * Note: yarn "weight" refers to the thickness of yarn, (not how many pounds or grams it weighs). 
  * There are standard weights of yarn
- * A pdf from the Craft Yarn Council on "Yarn Standards" will be added to the repo soon.
+ * Please refer to the pdf from the Craft Yarn Council on "Yarn Standards" in the Docs.
  */ 
 
 /**
@@ -20,6 +20,8 @@
  * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
  * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
  * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
+ * @property {YarnWeight} bulky06 projects with Bulky 06 weight yarn.
+ * @property {YarnWeight} jumbo07 projects with Jumbo 07 weight yarn.
  */
 
 /**
@@ -30,6 +32,8 @@
  * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
  * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
  * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
+ * @property {YarnWeight} bulky06 projects with Bulky 06 weight yarn.
+ * @property {YarnWeight} jumbo07 projects with Jumbo 07 weight yarn.
  */
 
 /** @type {ProjectType} */
@@ -101,7 +105,33 @@ export const pulloverData = {
             adultLargePullover: 1500,
             adultXxlPullover: 1650,
         }
-    }
+    },
+    // bulky06: {
+    //     name: "Bulky 06",
+    //     yardageNeeded: {
+    //         // babyPullover: null,
+    //         // It doesn't make sense to make a baby pullover with bulky yarn.
+    //         babyPullover: 450,
+    //         toddlerPullover: 650,
+    //         childPullover: 1000,
+    //         adultSmallPullover: 1200,
+    //         adultLargePullover: 1500,
+    //         adultXxlPullover: 1650,
+    //     }
+    // },
+    // jumbo07: {
+    //     name: "Jumbo 07",
+    //     yardageNeeded: {
+    //         // babyPullover: null,
+    //         // It doesn't make sense to make a baby pullover with jumbo yarn.
+    //         babyPullover: 450,
+    //         toddlerPullover: 650,
+    //         childPullover: 1000,
+    //         adultSmallPullover: 1200,
+    //         adultLargePullover: 1500,
+    //         adultXxlPullover: 1650,
+    //     }
+    // },
 };
 
 
@@ -162,33 +192,65 @@ export const pulloverCrochetData = {
             adultXxlPulloverCrochet: 1850 * 1.25,
         }
     },
-    chunky05: {
-        name: "Chunky 05",
-        yardageNeededCrochet: {
-            // babyPullover: null,
-            // It doesn't make sense to make a baby pullover with chunky yarn.
-            babyPulloverCrochet: 450 * 1.25,
-            toddlerPulloverCrochet: 650 * 1.25,
-            childPulloverCrochet: 1000 * 1.25,
-            adultSmallPulloverCrochet: 1200 * 1.25,
-            adultLargePulloverCrochet: 1500 * 1.25,
-            adultXxlPulloverCrochet: 1650 * 1.25,
-        }
-    }
+    // bulky06: {
+    //     name: "Bulky 06",
+    //     yardageNeededCrochet: {
+    //         // babyPullover: null,
+    //         // It doesn't make sense to make a baby pullover with chunky yarn.
+    //         babyPulloverCrochet: 450 * 1.25,
+    //         toddlerPulloverCrochet: 650 * 1.25,
+    //         childPulloverCrochet: 1000 * 1.25,
+    //         adultSmallPulloverCrochet: 1200 * 1.25,
+    //         adultLargePulloverCrochet: 1500 * 1.25,
+    //         adultXxlPulloverCrochet: 1650 * 1.25,
+    //     }
+    // },
+    // jumbo07: {
+    //     name: "Jumbo 07",
+    //     yardageNeededCrochet: {
+    //         // babyPullover: null,
+    //         // It doesn't make sense to make a baby pullover with chunky yarn.
+    //         babyPulloverCrochet: 450 * 1.25,
+    //         toddlerPulloverCrochet: 650 * 1.25,
+    //         childPulloverCrochet: 1000 * 1.25,
+    //         adultSmallPulloverCrochet: 1200 * 1.25,
+    //         adultLargePulloverCrochet: 1500 * 1.25,
+    //         adultXxlPulloverCrochet: 1650 * 1.25,
+    //     }
+    // }
 };
 
 // ----------------------------------------------------  
 // -------- SCARFS ----------
 
+// Calculations for scarfs and blankets use the following formula:
+// (width * length * (gauge))/6 
+// gauge = number of stitches /4 inches
+// (width * length * (gauge)) gives the number of square inches
+// dividing by 6 converts square inches to linear yards.
+// See docs - Calculations and the Craft Yarn Council PDF pages 22-24.
+// Standard gauge for each weight of yarn is a range (eg worsted 04 16-20st/4inches). 
+// The larger value was used because a tighter gauge requires more yarn.
+
 /** @type {ProjectType} */
 export const scarfData = {
+    lace00: {
+        name: "Lace 00",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (40/4))/6,
+            adultSmallScarf: ( 7 * 70 * (40/4))/6,
+            adultLargeScarf: ( 8 * 80 * (40/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (40/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (40/4))/6,
+        }
+    },
     fingering01: {
         name: "Fingering 01",
         yardageNeeded: {
             childScarf: (5 * 60 * (32/4))/6,
             adultSmallScarf: ( 7 * 70 * (32/4))/6,
             adultLargeScarf: ( 8 * 80 * (32/4))/6,
-            adultExtraLongScarf: ( 8 * (32/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (32/4))/6,
             doctorWhoScarf: ( 10.5 * 114 * (32/4))/6,
         }
     },
@@ -198,7 +260,7 @@ export const scarfData = {
             childScarf: (5 * 60 * (26/4))/6,
             adultSmallScarf: ( 7 * 70 * (26/4))/6,
             adultLargeScarf: ( 8 * 80 * (26/4))/6,
-            adultExtraLongScarf: ( 8 * (26/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (26/4))/6,
             doctorWhoScarf: ( 10.5 * 114 * (26/4))/6,
         }
     },
@@ -208,7 +270,7 @@ export const scarfData = {
             childScarf: (5 * 60 * (24/4))/6,
             adultSmallScarf: ( 7 * 70 * (24/4))/6,
             adultLargeScarf: ( 8 * 80 * (24/4))/6,
-            adultExtraLongScarf: ( 8 * (24/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (24/4))/6,
             doctorWhoScarf: ( 10.5 * 114 * (24/4))/6,
         }
     },
@@ -218,7 +280,7 @@ export const scarfData = {
             childScarf: (5 * 60 * (20/4))/6,
             adultSmallScarf: ( 7 * 70 * (20/4))/6,
             adultLargeScarf: ( 8 * 80 * (20/4))/6,
-            adultExtraLongScarf: ( 8 * (20/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (20/4))/6,
             doctorWhoScarf: ( 10.5 * 114 * (20/4))/6,
         }
     },
@@ -228,8 +290,28 @@ export const scarfData = {
             childScarf: (5 * 60 * (15/4))/6,
             adultSmallScarf: ( 7 * 70 * (15/4))/6,
             adultLargeScarf: ( 8 * 80 * (15/4))/6,
-            adultExtraLongScarf: ( 8 * (15/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (15/4))/6,
             doctorWhoScarf: ( 10.5 * 114 * (15/4))/6,
+        }
+    },
+    bulky06: {
+        name: "Bulky 06",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (11/4))/6,
+            adultSmallScarf: ( 7 * 70 * (11/4))/6,
+            adultLargeScarf: ( 8 * 80 * (11/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (11/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (11/4))/6,
+        }
+    },
+    jumbo07: {
+        name: "Jumbo 07",
+        yardageNeeded: {
+            childScarf: (5 * 60 * 71/4))/6,
+            adultSmallScarf: ( 7 * 70 * (7/4))/6,
+            adultLargeScarf: ( 8 * 80 * (7/4))/6,
+            adultExtraLongScarf: ( 8 * 100 * (7/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (7/4))/6,
         }
     },
 };
