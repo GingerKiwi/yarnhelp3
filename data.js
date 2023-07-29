@@ -41,12 +41,12 @@ export const pulloverData = {
     lace00: {
         name: "Lace 00",
         yardageNeeded: {
-            babyPullover: 0,
-            toddlerPullover: 0,
-            childPullover: 0,
-            adultSmallPullover: 0,
-            adultLargePullover: 0,
-            adultXxlPullover: 0,
+            babyPullover: 100,
+            toddlerPullover: 100,
+            childPullover: 100,
+            adultSmallPullover: 100,
+            adultLargePullover: 100,
+            adultXxlPullover: 100,
         }
     },
     fingering01: {
@@ -307,7 +307,7 @@ export const scarfData = {
     jumbo07: {
         name: "Jumbo 07",
         yardageNeeded: {
-            childScarf: (5 * 60 * 71/4))/6,
+            childScarf: (5 * 60 * (71/4))/6,
             adultSmallScarf: ( 7 * 70 * (7/4))/6,
             adultLargeScarf: ( 8 * 80 * (7/4))/6,
             adultExtraLongScarf: ( 8 * 100 * (7/4))/6,
