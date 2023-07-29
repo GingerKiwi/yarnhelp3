@@ -211,6 +211,23 @@ margin-inline: auto;
     background-attachment: fixed;
 }
 
+.hero-binary {
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Background styles */
+    background-image: url(/assets/binaryheart-alexander-sinn-KgLtFCgfC28-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .hero h1 {
     /* Text styles */
     font-size: 3em;
@@ -316,11 +333,6 @@ margin-bottom: 0.75rem;
 .uppercase {
     text-transform: uppercase;
 }
-
-
-
-
-
 
 
 

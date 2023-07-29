@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Audiowide&family=Chicle&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter&family=Playfair+Display:wght@400;500&family=Send+Flowers&family=Share+Tech+Mono&family=Ubuntu+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yarn Help!</title>
+  </head>
+  <header>
+    <!-- A11Y - ADD SKIP TO MAIN CONTENT! -->
+    <form class="color-picker" action="">
+      <fieldset>
+        <legend class="visually-hidden">Pick a color scheme</legend>
+
+        <label for="groovy" class="visually-hidden">Groovy Theme</label>
+        <input type="radio" id="groovy" name="theme" checked />
+
+        <label for="starwars-dark" class="visually-hidden"
+          >Starwars Dark Theme</label
+        >
+        <input type="radio" name="theme" id="starwars-dark" />
+
+        <label for="elegant" class="visually-hidden">Elegant Theme</label>
+        <input type="radio" id="elegant" name="theme" />
+
+        <label for="simple-dark" class="visually-hidden"
+          >Simple Dark Dyslexia Friendly Theme</label
+        >
+        <input type="radio" id="simple-dark" name="theme" />
+      </fieldset>
+    </form>
+    <nav>
+      <img src="assets/menu.svg" class="menu" id="menu-btn" alt="open menu" />
+      <ul class="nav" id="nav">
+        <li class="exit" id="/assets/exit-btn">
+          <img
+            src="assets/exit.svg"
+            class="menu"
+            id="exit-btn"
+            alt="close menu"
+          />
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="howmuchyarn.html">How Much Yarn?</a></li>
+        <li><a href="doctorwho.html">Doctor Who Scarf</a></li>
+        <li><a href="text-binary-knit-converter.html">Text to Binary to Knitting Pattern</a></li>
+        <li>
+          <a href="craftingandcode.html"
+            >Crafting and Code Coffee Chats and Discord
+          </a>
+        </li>
+        <li><a href="about.html">About and Contact</a></li>
+        <!-- <li><a href="index01.html">Old Site Version 1.0</a></li> -->
+      </ul>
+    </nav>
+    <section class="hero-binary">
+      <div class="hero--inner">
+        <div class="hero--inner-title">
+          <h1>Secret Message Generator</h1>
+        </div>
+        <h2 class="tagline">
+          Converts text to binary then to a knitting pattern so you can have a
+          secret message in your knitting!
+        </h2>
+      </div>
+    </section>
+  </header>
+  <body>
+    <main>
+        <div class="wrapper margin--bottom-1rem">
+        <section class="card--content margin--bottom-1rem">
+        <h2>title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        aspernatur ducimus, distinctio in aperiam autem deleniti omnis repellat
+        veniam quae rerum nesciunt harum similique quo, nisi, fugit ea a
+        voluptatem!
+      </p>
+      </section>
+
+      <section class="card--content margin--bottom-1rem">
+        <form action="#" class="secret-message">
+        <div class="form-section">
+            <fieldset>
+                <div class="form-section padding--top-2">
+                    <label for="input"
+                      >Secret Message Text:
+                      <input type="text" placeholder="" name="text-message-input" id="text-message-input" />
+                    </label>
+        
+                    <button type="submit" id="btn-secret" class="btn-secret btn">
+                      Convert
+                    </button>
+                  </div>
+            </fieldset>
+        </div>
+        </form>
+      </section>
+      <section>
+      <h2>Secret Message</h2>
+        
+      <div class="card margin--bottom-1rem">
+        <h3 class="card__title align--center">Your Message Text</h3>
+        <p>You wrote:<span class="textMessage">__</span>.</p>
+      </div>
+          <div class="card margin--bottom-1rem">
+            <h3 class="card__title align--center">Binary Code</h3>
+            <p>Your message in binary code: <span class="binaryMessageOutput">__</span>.</p>
+          </div>
+        
+            <div class="card margin--bottom-1rem">
+              <h3 class="card__title align--center">Knitting Pattern</h3>
+              <p>Your message as a written knit and purl knitting pattern: <span class="knitBinaryMessage">__</span>.</p>
+            </div>
+          
+            <div class="card margin--bottom-1rem">
+              <h3 class="card__title align--center">Knitting Chart</h3>
+              <p>The shaded squares can be knit stiches or your main colour. The blank squares can be purl stitches or your contrasting colour</p>
+              <p>Your message as a written knitting chart: <span class="knitBinaryChart"></span>.</p>
+              <p>Developer Note: This needs to be a graph of rectangles with a ratio of 4:5 (height:width). A darker line every 8 stitches to demarcate each byte/character.</p>
+            </div>
+          </div>   
+        </section>
+    
+</div>
+    </main>
+  </body>
+    <script src="/app.js"></script>
+    <script src="/nav.js"></script>
+    <script src="/text-binary-knit-converter.js"></script>
+</html>
