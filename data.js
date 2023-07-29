@@ -105,30 +105,6 @@ export const pulloverData = {
 };
 
 
-/** @type {ProjectType} */
-export const scarfData = {
-    fingering01: {
-        name: "Fingering 01",
-        yardageNeeded: {
-            childScarf: 250 * 2,
-            adultSmallScarf: 409 * 2,
-            adultLargeScarf: 534 * 2,
-            adultExtraLongScarf: 667 * 2,
-            doctorWhoScarf: 1260 * 2,
-        }
-    },
-    worsted04: {
-        name: "Worsted 04",
-        yardageNeeded: {
-            childScarf: 250,
-            adultSmallScarf: 409,
-            adultLargeScarf: 534,
-            adultExtraLongScarf: 667,
-            doctorWhoScarf: 1260,
-        }
-    },
-};
-
 /** @type {ProjectTypeCrochet} */
 export const pulloverCrochetData = {
     lace00: {
@@ -191,6 +167,7 @@ export const pulloverCrochetData = {
         yardageNeededCrochet: {
             // babyPullover: null,
             // It doesn't make sense to make a baby pullover with chunky yarn.
+            babyPulloverCrochet: 450 * 1.25,
             toddlerPulloverCrochet: 650 * 1.25,
             childPulloverCrochet: 1000 * 1.25,
             adultSmallPulloverCrochet: 1200 * 1.25,
@@ -200,3 +177,59 @@ export const pulloverCrochetData = {
     }
 };
 
+// ----------------------------------------------------  
+// -------- SCARFS ----------
+
+/** @type {ProjectType} */
+export const scarfData = {
+    fingering01: {
+        name: "Fingering 01",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (32/4))/6,
+            adultSmallScarf: ( 7 * 70 * (32/4))/6,
+            adultLargeScarf: ( 8 * 80 * (32/4))/6,
+            adultExtraLongScarf: ( 8 * (32/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (32/4))/6,
+        }
+    },
+    sport02: {
+        name: "Sport 02",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (26/4))/6,
+            adultSmallScarf: ( 7 * 70 * (26/4))/6,
+            adultLargeScarf: ( 8 * 80 * (26/4))/6,
+            adultExtraLongScarf: ( 8 * (26/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (26/4))/6,
+        }
+    },
+    dk03: {
+        name: "DK 03",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (24/4))/6,
+            adultSmallScarf: ( 7 * 70 * (24/4))/6,
+            adultLargeScarf: ( 8 * 80 * (24/4))/6,
+            adultExtraLongScarf: ( 8 * (24/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (24/4))/6,
+        }
+    },
+    worsted04: {
+        name: "Worsted 04",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (20/4))/6,
+            adultSmallScarf: ( 7 * 70 * (20/4))/6,
+            adultLargeScarf: ( 8 * 80 * (20/4))/6,
+            adultExtraLongScarf: ( 8 * (20/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (20/4))/6,
+        }
+    },
+    bulky05: {
+        name: "Bulky 05",
+        yardageNeeded: {
+            childScarf: (5 * 60 * (15/4))/6,
+            adultSmallScarf: ( 7 * 70 * (15/4))/6,
+            adultLargeScarf: ( 8 * 80 * (15/4))/6,
+            adultExtraLongScarf: ( 8 * (15/4))/6,
+            doctorWhoScarf: ( 10.5 * 114 * (15/4))/6,
+        }
+    },
+};

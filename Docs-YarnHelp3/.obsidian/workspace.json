@@ -11,11 +11,9 @@
             "id": "3ccbdb1ec088c883",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "YarnHelp2-Docs/Calculations.md",
-                "mode": "source",
-                "source": false
+                "file": "YarnHelp2-Docs/PDF-References/CYC_YarnStandards-2018-11-06.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YarnHelp2-Docs/Calculations.md",
+                "file": "YarnHelp2-Docs/PDF-References/CYC_YarnStandards-2018-11-06.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "YarnHelp2-Docs/Calculations.md",
+                "file": "YarnHelp2-Docs/PDF-References/CYC_YarnStandards-2018-11-06.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "YarnHelp2-Docs/Calculations.md"
+                "file": "YarnHelp2-Docs/PDF-References/CYC_YarnStandards-2018-11-06.pdf"
               }
             }
           }
@@ -148,11 +146,11 @@
   },
   "active": "3ccbdb1ec088c883",
   "lastOpenFiles": [
+    "YarnHelp2-Docs/Calculations.md",
     "YarnHelp2-Docs/notes.md",
     "YardageNeeded-Scarfs.md",
     "Yardage Needed - Pullovers.md",
     "YardageNeeded-Pullovers.md",
-    "YarnHelp2-Docs/Calculations.md",
     "YarnHelp2-Docs/Readme1.0.md",
     "YarnHelp2-Docs/PDF-References/How Much Yarn Do I Need – TwistedYarnShop.pdf",
     "YarnHelp2-Docs/PDF-References/How Much Yarn Do I Need for a Knitted Sweater - Interweave.pdf",
