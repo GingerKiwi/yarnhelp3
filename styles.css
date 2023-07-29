@@ -322,6 +322,10 @@ margin-bottom: 0.75rem;
     margin: 1rem;
 }
 
+.margin--top-2rem {
+    margin-top: 2rem;
+}
+
 .margin--bottom-1rem {
     margin-bottom: 1rem;
 }
@@ -332,6 +336,11 @@ margin-bottom: 0.75rem;
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.text--clr-card-bg {
+    color: var(--clr-card-bg);
+
 }
 
 
