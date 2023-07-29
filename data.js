@@ -19,7 +19,7 @@
  * @property {YarnWeight} sport02 projects with Sport 02 weight yarn.
  * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
  * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
- * @property {YarnWeight} bulky05 projects with Chunky 05 weight yarn.
+ * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
  */
 
 /**
@@ -29,7 +29,7 @@
  * @property {YarnWeight} sport02 projects with Sport 02 weight yarn.
  * @property {YarnWeight} dk03 projects with DK 03 weight yarn.
  * @property {YarnWeight} worsted04 projects with Worsted 04 weight yarn.
- * @property {YarnWeight} bulky05 projects with Chunky 05 weight yarn.
+ * @property {YarnWeight} chunky05 projects with Chunky 05 weight yarn.
  */
 
 /** @type {ProjectType} */
@@ -89,8 +89,8 @@ export const pulloverData = {
             adultXxlPullover: 1850,
         }
     },
-    bulky05: {
-        name: "Bulky 05",
+    chunky05: {
+        name: "Chunky 05",
         yardageNeeded: {
             // babyPullover: null,
             // It doesn't make sense to make a baby pullover with chunky yarn.
@@ -162,8 +162,8 @@ export const pulloverCrochetData = {
             adultXxlPulloverCrochet: 1850 * 1.25,
         }
     },
-    bulky05: {
-        name: "Bulky 05",
+    chunky05: {
+        name: "Chunky 05",
         yardageNeededCrochet: {
             // babyPullover: null,
             // It doesn't make sense to make a baby pullover with chunky yarn.
@@ -222,8 +222,8 @@ export const scarfData = {
             doctorWhoScarf: ( 10.5 * 114 * (20/4))/6,
         }
     },
-    bulky05: {
-        name: "Bulky 05",
+    chunky05: {
+        name: "Chunky 05",
         yardageNeeded: {
             childScarf: (5 * 60 * (15/4))/6,
             adultSmallScarf: ( 7 * 70 * (15/4))/6,
