@@ -89,7 +89,7 @@
     --simple-dark--clr-white: hsl(0, 11%, 91%); /*FFFFFF*/
     --simple-dark--clr-grey-platium:hsl(40, 5%, 89%); /*E5E4E2*/
     --simple-dark--clr-grey-charcoal: hsl(204, 19%, 26%); /*#36454F*/
-    --simple-dark--clr-blue-light: hsl(204, 86%, 37%); /*#36454F*/
+    --simple-dark--clr-blue-light: hsl(190, 73%, 42%); /*#36454F*/
     --simple-dark--ff-heading1: 'Arial black', sans-serif;
     --simple-dark--ff-heading: 'Arial', sans-serif;
     --simple-dark--ff-tagline: 'Arial', sans-serif;
@@ -408,6 +408,9 @@ background-color: var(--radio-color);
     --hero-inner--title-bg-clr: var(--groovy--clr-orange);
     --hero-inner-title-border-clr: var(--groovy--clr-pink);
     --hero-inner-bg: var(--groovy--clr-grey-light);
+    --clr-nav-bg: var(--groovy--clr-orange);
+    --clr-nav-link: var(--groovy--clr-white);
+    --clr-nav-link-active: var(--groovy--clr-pink);
 
     --clr-heading1: var(--groovy--clr-white);
     --clr-heading: var(--groovy--clr-pink);
@@ -431,6 +434,9 @@ background-color: var(--radio-color);
     --hero-inner--title-bg-clr: var(--starwars--clr-black);
     --hero-inner-title-border-clr: var(--starwars--clr-yellow);
     --hero-inner-bg: var(--starwars--clr-black);
+    --clr-nav-bg: var(--starwars--clr-black);
+    --clr-nav-link: var(--starwars--clr-yellow);
+    --clr-nav-link-active: var(--simple-dark--clr-blue-light);
 
     --clr-heading1: var(--starwars--clr-yellow);
     --clr-heading: var(--starwars--clr-yellow);
@@ -452,6 +458,9 @@ background-color: var(--radio-color);
     --hero-inner--title-bg-clr: var(--groovy--clr-grey-light);
     --hero-inner-title-border-clr: var(--elegant--clr-wheat);
     --hero-inner-bg: var(--elegant--clr-snow);
+    --clr-nav-bg: var(--elegant--clr-snow);
+    --clr-nav-link: var(--elegant--clr-wheat);
+    --clr-nav-link-active: var(--elegant--clr-forest);
 
     --clr-heading1: var(--elegant--clr-wheat);
     --clr-heading: var(--elegant--clr-charcoal);
@@ -474,6 +483,7 @@ background-color: var(--radio-color);
     --hero-inner--title-bg-clr: var(--simple-dark--clr-black);
     --hero-inner-title-border-clr: var(--simple-dark--clr-grey);
     --hero-inner-bg: var(--simple-dark--clr-black);
+    --clr-nav-bg: var(--simple-dark--clr-grey-charcoal);
 
     --clr-heading1: var(--simple-dark--clr-grey-platium);
     --clr-heading: var(--simple-dark--clr-white);
@@ -522,7 +532,7 @@ nav ul {
     width: 100%;
     top: 0;
     left: 0;
-    background: var(--clr-body-bg);
+    background: var(--clr-nav-bg);
     height: 100vh;
     margin-top: 5rem;
     padding-top: 5em;
@@ -567,24 +577,25 @@ ul.nav {
 
 ul.nav li a {
     font-size: 2rem;
-    padding: 0 1em;
+    padding: 0.5rem 1rem;
     font-weight: normal;
 }
 
-ul.nav li:last-child a {
+nav.ul li:last-child a {
     padding-right: 0;
 }
 
-ul.nav .active a {
+nav.ul:active a {
     font-weight: bold;
     text-decoration: underline;
-    color: blue;
+    color: var(--clr-nav-link-active);
 }
 
-ul.nav:hover a {
+nav.ul:hover a {
     font-weight: bold;
-    color: green;
-    text-decoration: underline 1px var(--clr-card-top);
+    color: var(--clr-nav-link-active);
+    text-decoration: underline 1px var(--clr-nav-link-active);
+    text
 }
 
 /* #nav-focus {
